@@ -1,3 +1,4 @@
+import { LumoraLaunch } from "./Lumora";
 import { Composition, Folder } from "remotion";
 import { HelloWorld } from "./HelloWorld";
 import { Logo } from "./HelloWorld/Logo";
@@ -8,6 +9,7 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="LumoraLaunch" component={LumoraLaunch} durationInFrames={300} fps={30} width={1920} height={1080} />
       <Folder name="Elements">
         <Composition
           id="Logo"
