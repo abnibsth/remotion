@@ -8,21 +8,24 @@ const ease = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as co
 
 const Text: React.FC<{children: React.ReactNode; dark?: boolean}> = ({children, dark}) => {
  const f = useCurrentFrame();
- return <div style={{opacity: interpolate(f,[0,8],[0,1],ease), translate: `0 ${interpolate(f,[0,12],[24,0],ease)}px`, color: dark ? green : cream}}>{children}</div>;
+ const {fps} = useVideoConfig();
+ return <div style={{opacity: interpolate(f,[0,.18*fps],[0,1],ease), translate: `0 ${interpolate(f,[0,.38*fps],[32,0],ease)}px`, color: dark ? green : cream}}>{children}</div>;
 };
 const Photo: React.FC<{src: string; title: React.ReactNode; index: string}> = ({src,title,index}) => {
  const f=useCurrentFrame();
+ const {fps} = useVideoConfig();
  return <AbsoluteFill style={{background:green}}>
- <Img src={staticFile(src)} style={{width:'100%',height:'100%',objectFit:'cover',scale:interpolate(f,[0,48],[1.04,1.1],ease)}} />
- <AbsoluteFill style={{background:'linear-gradient(90deg,rgba(8,23,18,.74),transparent 82%)'}} />
- <div style={{position:'absolute',left:130,top:100,fontSize:23,letterSpacing:7,color:cream}}>LUMORA / CERITA USAHA</div>
- <div style={{position:'absolute',left:130,top:390,width:1000,fontFamily:serif,fontSize:104,lineHeight:1.04,letterSpacing:-3}}><Text>{title}</Text></div>
+ <Img src={staticFile(src)} style={{position:'absolute',left:680,top:0,width:1240,height:'100%',objectFit:'cover',objectPosition:'right center',scale:interpolate(f,[0,1.5*fps],[1.06,1.13],ease),translate:`${interpolate(f,[0,1.5*fps],[12,-12],ease)}px 0`}} />
+ <AbsoluteFill style={{background:'linear-gradient(90deg,#102a20 0%,#102a20 35%,rgba(16,42,32,.92) 43%,rgba(16,42,32,.25) 66%,transparent 100%)'}} />
+ <div style={{position:'absolute',left:120,top:110,fontSize:23,letterSpacing:6,color:cream}}>LUMORA / CERITA USAHA</div>
+ <div style={{position:'absolute',left:120,top:355,width:660,fontFamily:serif,fontSize:92,lineHeight:1.12,letterSpacing:-2,textShadow:'0 4px 22px #0005'}}><Text>{title}</Text></div>
  <div style={{position:'absolute',bottom:94,left:130,color:cream,fontSize:21,letterSpacing:4}}>{index} — DARI CERITA, JADI PELUANG.</div>
  </AbsoluteFill>;
 };
 const Laptop: React.FC<{profile?: boolean}> = ({profile}) => {
  const f=useCurrentFrame();
- return <div style={{position:'absolute',left:850,top:210,width:970,rotate:'-3deg',translate:`0 ${interpolate(f,[0,15],[35,0],ease)}px`,scale:interpolate(f,[0,50],[.96,1.03],ease)}}>
+ const {fps} = useVideoConfig();
+ return <div style={{position:'absolute',left:850,top:210,width:970,rotate:`${interpolate(f,[0,.65*fps],[-5,-2],ease)}deg`,translate:`0 ${interpolate(f,[0,.6*fps],[65,0],ease)}px`,opacity:interpolate(f,[0,.2*fps],[0,1],ease),scale:interpolate(f,[0,1.6*fps],[.95,1.02],ease)}}>
  <div style={{padding:'18px 18px 30px',background:'#202320',borderRadius:24,boxShadow:'0 55px 90px #17392d35'}}>
  <div style={{height:540,overflow:'hidden',background:'#fff',borderRadius:7}}><Img src={staticFile(profile?'lumora/profile.png':'lumora/homepage.png')} style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'top'}} /></div>
  </div><div style={{height:24,background:'linear-gradient(#a9aba3,#d5d6cf)',margin:'0 -55px',borderRadius:'0 0 45px 45px'}}/>
@@ -41,9 +44,10 @@ export const ProfileScene=()=> <Product label="04 / PROFIL DIGITAL" title={<>Cer
 export const CollaborationScene=()=> <Product label="05 / PELUANG BARU" title={<>Temukan<br/>kolaborasi.</>} subtitle="Jelajahi bisnis. Temukan mitra yang sejalan."/>;
 export const ClosingScene=()=> {
  const f=useCurrentFrame();
+ const {fps} = useVideoConfig();
  return <AbsoluteFill style={{background:cream,color:green,alignItems:'center',justifyContent:'center'}}>
  <div style={{position:'absolute',inset:0,background:'radial-gradient(ellipse at 80% 0%,#c2c9ad80,transparent 55%),radial-gradient(ellipse at 0% 100%,#b9c1a460,transparent 45%)'}} />
- <div style={{textAlign:'center',opacity:interpolate(f,[0,10],[0,1],ease),scale:interpolate(f,[0,60],[.96,1],ease)}}>
+ <div style={{textAlign:'center',opacity:interpolate(f,[0,.25*fps],[0,1],ease),scale:interpolate(f,[0,2.6*fps],[.94,1],ease)}}>
  <div style={{fontSize:29,letterSpacing:8,marginBottom:42}}>BISNIS LOKAL, PELUANG LEBIH BESAR.</div>
  <div style={{fontFamily:serif,fontSize:200,lineHeight:1,letterSpacing:-11}}>LUMORA<span style={{fontSize:130}}>.</span></div>
  <div style={{fontSize:30,letterSpacing:8,marginTop:26}}>Cerita Bisnis, Peluang Nyata.</div>

@@ -9,7 +9,7 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      <Composition id="LumoraLaunch" component={LumoraLaunch} durationInFrames={300} fps={30} width={1920} height={1080} />
+      <Composition id="LumoraLaunch" component={LumoraLaunch} durationInFrames={600} fps={60} width={1920} height={1080} />
       <Folder name="Elements">
         <Composition
           id="Logo"
