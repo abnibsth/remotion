@@ -1,4 +1,5 @@
 import { LumoraLaunch } from "./Lumora";
+import { DreamDungeon, Bedroom, Arrival, Meeting, RemSleep, Victory } from "./DreamDungeon";
 import { Composition, Folder } from "remotion";
 import { HelloWorld } from "./HelloWorld";
 import { Logo } from "./HelloWorld/Logo";
@@ -9,6 +10,14 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="DreamDungeon" component={DreamDungeon} durationInFrames={2400} fps={60} width={1080} height={1920} />
+      <Folder name="Dream-Dungeon-Scenes">
+        <Composition id="Dream-Bedroom" component={Bedroom} durationInFrames={480} fps={60} width={1080} height={1920} />
+        <Composition id="Dream-Arrival" component={Arrival} durationInFrames={510} fps={60} width={1080} height={1920} />
+        <Composition id="Dream-Guardian" component={Meeting} durationInFrames={510} fps={60} width={1080} height={1920} />
+        <Composition id="Dream-REM" component={RemSleep} durationInFrames={630} fps={60} width={1080} height={1920} />
+        <Composition id="Dream-Victory" component={Victory} durationInFrames={390} fps={60} width={1080} height={1920} />
+      </Folder>
       <Composition id="LumoraLaunch" component={LumoraLaunch} durationInFrames={600} fps={60} width={1920} height={1080} />
       <Folder name="Elements">
         <Composition
