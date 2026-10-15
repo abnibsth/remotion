@@ -2,7 +2,6 @@ import { Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { C, DreamWorld, Island, Panel, PixelText, Portal, SceneCanvas, Tree, ease, progress } from "./Art";
 import { Camera, IslandMotion } from "./Camera";
 import { Hero } from "./Sprites";
-import { Dialogue } from "./Dialogue";
 
 export const Arrival = () => {
   const f = useCurrentFrame();
@@ -17,11 +16,10 @@ export const Arrival = () => {
         <Island x={135} y={295} scale={1.5} ruins />
         <Tree x={46} y={279} scale={0.9} pink /><Tree x={226} y={282} scale={0.85} />
         <Portal x={113} y={304} amount={1 - progress(f, fps, 0.9, 2.4)} />
-        <Hero x={heroX} y={heroY} scale={1.5} state={walk > 0 && walk < 1 ? "walk" : f < fps ? "surprised" : f < 6.7 * fps ? "talk" : "idle"} facing={walk < 1 ? "right" : "left"} />
+        <Hero x={heroX} y={heroY} scale={1.5} state={walk > 0 && walk < 1 ? "walk" : f < fps ? "surprised" : "idle"} facing={walk < 1 ? "right" : "left"} />
       </IslandMotion>
     </Camera>
     <g opacity={progress(f, fps, 0.8, 1.4)}><Panel y={44} title="MISI BARU" subtitle="KENAPA KITA BERMIMPI?" color={C.gold} /></g>
     <PixelText text="DUNIA MIMPI" x={125} y={105} size={1.5} color={C.lavender} />
-    <Dialogue start={5.5} end={8.5} speaker="PETUALANG" text="Aku di mana? Ini dunia mimpi?" />
   </SceneCanvas>;
 };

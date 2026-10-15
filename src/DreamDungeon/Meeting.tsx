@@ -1,7 +1,7 @@
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import { Brain, C, DreamWorld, Island, Memory, Panel, SceneCanvas, Star, Tree, progress } from "./Art";
 import { Camera, IslandMotion } from "./Camera";
-import { Dialogue } from "./Dialogue";
+import { isVoiceSpeaking } from "./RecordedVoice";
 import { Guardian, Hero } from "./Sprites";
 
 export const Meeting = () => {
@@ -10,7 +10,7 @@ export const Meeting = () => {
   const walk = progress(f, fps, 0, 1.8);
   const summon = progress(f, fps, 1.6, 2.7);
   const t = f / fps;
-  const speaking = t >= 2.95 && t < 4.7;
+  const speaking = isVoiceSpeaking(t + 15);
   return <SceneCanvas>
     <DreamWorld cameraX={walk * 8} />
     <Camera focusX={140} focusY={238} zoomFrom={1.04} zoomTo={1.15} screenY={217}>
@@ -30,6 +30,5 @@ export const Meeting = () => {
       </g>
     </Camera>
     <Panel y={44} title="TEMUI PENJAGA MIMPI" color={C.mint} />
-    <Dialogue start={2.7} end={8.5} text="Tahukah kamu? Otakmu tetap aktif saat tidur!" />
   </SceneCanvas>;
 };

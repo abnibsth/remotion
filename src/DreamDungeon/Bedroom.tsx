@@ -6,8 +6,8 @@ import { Hero } from "./Sprites";
 export const Bedroom = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const portal = progress(frame, fps, 3.2, 4.7);
-  const enter = progress(frame, fps, 5.2, 7);
+  const portal = progress(frame, fps, 4.9, 5.8);
+  const enter = progress(frame, fps, 6.1, 7.7);
   return <SceneCanvas>
     <Rect x={0} y={0} w={270} h={480} fill="#17182b" />
     <Camera focusX={143} focusY={232} zoomFrom={1.18} zoomTo={1.32} screenY={269} duration={7}>
@@ -40,7 +40,7 @@ export const Bedroom = () => {
     <Rect x={113} y={179} w={74} h={102} fill="#372c3d" /><Rect x={116} y={172} w={68} h={101} fill="#997279" />
     <Rect x={120} y={176} w={60} h={96} fill="#563e50" /><Rect x={120} y={184} w={60} h={81} fill="#d3b8b5" />
     <Rect x={126} y={188} w={48} h={19} fill="#f2d9c3" /><Rect x={128} y={190} w={44} h={4} fill="#fff0d5" />
-    {enter === 0 ? <Hero x={150} y={248} scale={1.12} state={frame < 3.4 * fps ? "sleep" : "surprised"} /> : null}
+    {enter === 0 ? <Hero x={150} y={248} scale={1.12} state={frame < 5.1 * fps ? "sleep" : "surprised"} /> : null}
     <Rect x={120} y={220} w={60} h={43} fill="#596b91" /><Rect x={120} y={220} w={60} h={6} fill="#a4b7c9" />
     <Rect x={125} y={229} w={3} h={29} fill="#7e91af" /><Rect x={174} y={229} w={3} h={29} fill="#435479" />
     {Array.from({ length: 5 }, (_, i) => <Star key={i} x={135 + (i * 11 % 37)} y={235 + (i * 7 % 23)} size={0.3} color="#a4b7c9" />)}
@@ -50,7 +50,7 @@ export const Bedroom = () => {
     <Rect x={188} y={159} w={36} h={31} fill={C.gold} opacity={0.045} />
     <Rect x={44} y={286} w={19} h={18} fill="#97696c" /><Rect x={40} y={273} w={26} h={15} fill="#597a71" />
     <Rect x={45} y={263} w={16} h={24} fill="#789c83" /><Rect x={52} y={263} w={3} h={22} fill="#a0b798" />
-    {frame < 3.3 * fps ? <PixelText text="Z Z Z" x={182} y={184 - Math.floor(frame / fps * 3)} size={0.8} color={C.lavender} /> : null}
+    {frame < 5 * fps ? <PixelText text="Z Z Z" x={182} y={184 - Math.floor(frame / fps * 3)} size={0.8} color={C.lavender} /> : null}
     <Portal x={149} y={184} amount={portal} />
     {enter > 0 ? <g opacity={1 - enter * 0.75}><Hero x={149} y={248 - enter * 53} scale={1.12 * (1 - enter * 0.55)} state="surprised" /></g> : null}
     {Array.from({ length: 17 }, (_, i) => <rect key={i} x={38 + i * 13 % 194} y={173 + (i * 31 + Math.floor(frame / 12)) % 156} width={1} height={1} fill={C.gold} opacity={0.25} />)}
@@ -59,6 +59,6 @@ export const Bedroom = () => {
     <PixelText text="EPISODE 02" x={125} y={67} size={1.2} color={C.lavender} />
     <PixelText text="LABIRIN MIMPI" x={125} y={88} size={1.8} />
     <PixelText text="01 - PORTAL TENGAH MALAM" x={125} y={415} size={1.1} color={C.lavender} />
-    <Rect x={0} y={0} w={270} h={480} fill={C.lavender} opacity={progress(frame, fps, 7.1, 7.5) * 0.55} />
+    <Rect x={0} y={0} w={270} h={480} fill={C.lavender} opacity={progress(frame, fps, 7.5, 8) * 0.55} />
   </SceneCanvas>;
 };

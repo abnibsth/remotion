@@ -6,8 +6,8 @@ import { Guardian, Hero } from "./Sprites";
 export const Victory = () => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const give = progress(f, fps, 0.4, 1.9);
-  const victory = progress(f, fps, 2, 2.5);
+  const give = progress(f, fps, 1.1, 3.1);
+  const victory = progress(f, fps, 0.2, 0.55);
   const t = f / fps;
   return <SceneCanvas>
     <DreamWorld cameraX={give * 5} />
@@ -25,7 +25,5 @@ export const Victory = () => {
       </g>
     </Camera>
     <g opacity={victory}><Panel y={44} title="MISI SELESAI!" subtitle="PENGETAHUAN +100 XP" color={C.gold} /></g>
-    <Panel y={310} title="KRISTAL MIMPI DIDAPAT!" subtitle="TIDUR. OTAK TETAP AKTIF." color={C.mint} />
-    <Panel y={359} title="FUNGSI PASTI MIMPI" subtitle="MASIH DITELITI." />
   </SceneCanvas>;
 };

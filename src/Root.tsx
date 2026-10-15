@@ -12,11 +12,11 @@ export const RemotionRoot: React.FC = () => {
     <>
       <Composition id="DreamDungeon" component={DreamDungeon} durationInFrames={2400} fps={60} width={1080} height={1920} />
       <Folder name="Dream-Dungeon-Scenes">
-        <Composition id="Dream-Bedroom" component={Bedroom} durationInFrames={480} fps={60} width={1080} height={1920} />
-        <Composition id="Dream-Arrival" component={Arrival} durationInFrames={510} fps={60} width={1080} height={1920} />
-        <Composition id="Dream-Guardian" component={Meeting} durationInFrames={510} fps={60} width={1080} height={1920} />
-        <Composition id="Dream-REM" component={RemSleep} durationInFrames={630} fps={60} width={1080} height={1920} />
-        <Composition id="Dream-Victory" component={Victory} durationInFrames={390} fps={60} width={1080} height={1920} />
+        <Composition id="Dream-Bedroom" component={Bedroom} durationInFrames={510} fps={60} width={1080} height={1920} />
+        <Composition id="Dream-Arrival" component={Arrival} durationInFrames={450} fps={60} width={1080} height={1920} />
+        <Composition id="Dream-Guardian" component={Meeting} durationInFrames={546} fps={60} width={1080} height={1920} />
+        <Composition id="Dream-REM" component={RemSleep} durationInFrames={552} fps={60} width={1080} height={1920} />
+        <Composition id="Dream-Victory" component={Victory} durationInFrames={462} fps={60} width={1080} height={1920} />
       </Folder>
       <Composition id="LumoraLaunch" component={LumoraLaunch} durationInFrames={600} fps={60} width={1920} height={1080} />
       <Folder name="Elements">

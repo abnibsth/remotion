@@ -1,15 +1,15 @@
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import { Brain, C, DreamWorld, Island, Memory, Panel, PixelText, Rect, SceneCanvas, Star, Tree, progress } from "./Art";
 import { Camera, IslandMotion } from "./Camera";
-import { Dialogue } from "./Dialogue";
+import { isVoiceSpeaking } from "./RecordedVoice";
 import { Guardian, Hero } from "./Sprites";
 
 export const RemSleep = () => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = f / fps;
-  const merge = progress(f, fps, 2.6, 4.1);
-  const form = progress(f, fps, 4.1, 5.7);
+  const merge = progress(f, fps, 0.8, 2.5);
+  const form = progress(f, fps, 2.5, 4.8);
   return <SceneCanvas>
     <DreamWorld cameraY={form * 15} />
     <Camera focusX={135} focusY={232} zoomFrom={1.06} zoomTo={1.12} screenY={214} duration={8}>
@@ -32,13 +32,11 @@ export const RemSleep = () => {
           <Memory x={32} y={-11} type="heart" scale={0.55} /><Memory x={-34} y={22} type="book" scale={0.55} />
         </g>
         <Hero x={89} y={309} scale={1.5} facing="right" />
-        <Guardian x={204} y={312} scale={1.4} speaking={(t > 0.65 && t < 2.3) || (t > 5.35 && t < 7.7)} gesture />
+        <Guardian x={204} y={312} scale={1.4} speaking={isVoiceSpeaking(t + 23.6)} gesture />
       </IslandMotion>
       {[0, 1, 2, 3, 4, 5].map((i) => <Star key={i} x={112 + i * 9} y={206 + ((t * 12 + i * 9) % 54)} color={i % 2 ? C.mint : C.gold} size={0.35} />)}
     </Camera>
     <Panel y={44} title="TIDUR REM" subtitle="FASE GERAK MATA CEPAT" color={C.mint} />
-    <Dialogue start={0.4} end={5.1} text="Mimpi sering terjadi saat fase tidur REM." page="02" />
-    <Dialogue start={5.1} end={10.5} text="Mimpi mungkin membantu otak memproses ingatan dan emosi." page="03" />
     <PixelText text="MIMPI JUGA BISA DI LUAR REM" x={125} y={411} size={0.9} color={C.lavender} />
   </SceneCanvas>;
 };
