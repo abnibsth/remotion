@@ -1,3 +1,4 @@
+import { NotifikasiOverload, HookScene, ComingScene, ChaosScene, BreakdownScene, SilenceScene, SolutionScene, PayoffScene } from "./Notifikasi";
 import { LumoraLaunch } from "./Lumora";
 import { DreamDungeon, Bedroom, Arrival, Meeting, RemSleep, Victory } from "./DreamDungeon";
 import { Composition, Folder } from "remotion";
@@ -10,6 +11,17 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="NotifikasiOverload" component={NotifikasiOverload} durationInFrames={600} fps={30} width={1080} height={1920} />
+      <Composition id="NotifikasiOverload60" component={NotifikasiOverload} durationInFrames={1200} fps={60} width={1080} height={1920} />
+      <Folder name="Notifikasi-Scenes">
+        <Composition id="Notifikasi-Hook" component={HookScene} durationInFrames={75} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Coming" component={ComingScene} durationInFrames={90} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Chaos" component={ChaosScene} durationInFrames={120} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Breakdown" component={BreakdownScene} durationInFrames={90} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Silence" component={SilenceScene} durationInFrames={90} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Solution" component={SolutionScene} durationInFrames={75} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Payoff" component={PayoffScene} durationInFrames={60} fps={30} width={1080} height={1920} />
+      </Folder>
       <Composition id="DreamDungeon" component={DreamDungeon} durationInFrames={2400} fps={60} width={1080} height={1920} />
       <Folder name="Dream-Dungeon-Scenes">
         <Composition id="Dream-Bedroom" component={Bedroom} durationInFrames={510} fps={60} width={1080} height={1920} />

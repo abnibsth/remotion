@@ -6,6 +6,8 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
     "@remotion/cli": "4.0.534",
     "@remotion/media": "4.0.534",
     "@remotion/transitions": "4.0.534",
@@ -18,8 +20,11 @@
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.534",
     "@types/react": "19.2.7",
+    "@types/react-dom": "^19.2.3",
     "@types/web": "0.0.166",
+    "esbuild": "^0.28.1",
     "eslint": "9.39.5",
+    "playwright-core": "^1.64.1",
     "prettier": "3.8.1",
     "typescript": "5.9.3"
   },
@@ -27,6 +32,11 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "notifikasi:test": "node --test scripts/notifikasi/motion.test.mjs",
+    "notifikasi:audio": "python -I scripts/notifikasi/audio.py",
+    "notifikasi:preview": "node scripts/notifikasi/render.mjs",
+    "notifikasi:render": "node scripts/notifikasi/render.mjs --full",
+    "notifikasi:verify": "node scripts/notifikasi/verify.mjs"
   }
 }
