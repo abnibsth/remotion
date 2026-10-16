@@ -1,0 +1,59 @@
+{
+  "product": "LUMORA",
+  "website": "https://lumora.bai01.my.id/",
+  "captureDate": "2026-10-16",
+  "captureMethod": "Actual Chrome desktop navigation, Playwright screenshots at 1536x960 CSS pixels, deviceScaleFactor 1.5",
+  "referenceSource": "assets/live-20261016/inventory.json",
+  "localProductSource": "D:/laragon/www/lumora-next/frontend",
+  "brand": {
+    "source": "Live served CSS, cross-checked with local app/globals.css",
+    "forest": "#123f32",
+    "deepForest": "#0b3027",
+    "lime": "#b7df68",
+    "ivory": "#f5f2e9",
+    "surface": "#fbfaf6",
+    "softGreen": "#e7efe9",
+    "ink": "#14382f",
+    "muted": "#66736d",
+    "border": "#d8d8cf",
+    "headlineFont": "Poppins",
+    "bodyFont": "Geist"
+  },
+  "assetDirectory": "assets/live-20261016",
+  "assets": [
+    {"file":"logo-nav.png","type":"official logo","source":"https://lumora.bai01.my.id/img/logo-nav.png"},
+    {"file":"logo-light.png","type":"official white logo","source":"local product public/img/logo-light.png"},
+    {"file":"logo-symbol.png","type":"official symbol, reference","source":"local product public/img/logo-symbol.png"},
+    {"file":"benner.png","type":"official hero photograph","source":"https://lumora.bai01.my.id/img/benner.png"},
+    {"file":"image.png","type":"official alternate imagery","source":"https://lumora.bai01.my.id/img/image.png"},
+    {"file":"landing.png","type":"actual desktop screenshot","source":"https://lumora.bai01.my.id/"},
+    {"file":"discovery-full.png","type":"actual full-page screenshot","source":"https://lumora.bai01.my.id/explore"},
+    {"file":"business-card-0.png","type":"actual business card screenshot","source":"https://lumora.bai01.my.id/explore","example":"Aksara Lokal"},
+    {"file":"business-card-1.png","type":"actual business card screenshot","source":"https://lumora.bai01.my.id/explore","example":"Arunika Bakery"},
+    {"file":"business-card-2.png","type":"actual business card screenshot","source":"https://lumora.bai01.my.id/explore","example":"Kopi Ruang Senja"},
+    {"file":"profile-full.png","type":"actual full-page screenshot","source":"https://lumora.bai01.my.id/business/aksara-lokal"},
+    {"file":"profile-perjalanan.png","type":"actual milestone section screenshot","source":"https://lumora.bai01.my.id/business/aksara-lokal#perjalanan"},
+    {"file":"profile-perkembangan.png","type":"actual growth indicator screenshot, reference","source":"https://lumora.bai01.my.id/business/aksara-lokal#perkembangan"},
+    {"file":"profile-model-bisnis.png","type":"actual Business Model Canvas screenshot","source":"https://lumora.bai01.my.id/business/aksara-lokal#model-bisnis"},
+    {"file":"ai-interface.png","type":"actual public AI interface screenshot","source":"https://lumora.bai01.my.id/#fitur"},
+    {"file":"font-1.woff2","type":"Poppins 700 Latin","source":"live website Next.js static font"},
+    {"file":"font-2.woff2","type":"Geist variable Latin","source":"live website Next.js static font"},
+    {"file":"font-4.woff2","type":"Poppins 500 Latin","source":"live website Next.js static font"},
+    {"file":"font-5.woff2","type":"Poppins 600 Latin","source":"live website Next.js static font"},
+    {"file":"../../audio/soundtrack.wav","type":"original music and synthesized SFX","source":"audio/generate_soundtrack.py, seeded original synthesis, no samples"}
+  ],
+  "reconstructedElements": [
+    "Readable homepage category chip controls reproduced from live text and styles",
+    "Browser window chrome and editorial scene headings",
+    "AI illustrative typed message, two illustrative responses, draft-profile callout",
+    "Connection line as editorial illustration, not a product transaction"
+  ],
+  "missingAssets": [],
+  "limitations": [
+    "No authenticated AI or dashboard captures; public AI widget used instead",
+    "AI conversation is clearly labeled illustration, not a recorded live response",
+    "All displayed business examples and performance figures are explicitly labeled as illustrative",
+    "No user-supplied voice-over; video is intentionally music/SFX only",
+    "spring-motion and motion-studio skill files unavailable; locally implemented analytical motion and rendering contract"
+  ]
+}
