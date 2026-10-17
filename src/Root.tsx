@@ -1,5 +1,7 @@
 import { NotifikasiOverload, HookScene, ComingScene, ChaosScene, BreakdownScene, SilenceScene, SolutionScene, PayoffScene } from "./Notifikasi";
 import { LumoraLaunch } from "./Lumora";
+import { GajianV2, GajianV2Prototype } from "./GajianV2";
+import { Gajian, SalaryScene, SultanScene, RealityScene, BalanceScene, SilenceScene as GajianSilenceScene, WaitingScene } from "./Gajian";
 import { DreamDungeon, Bedroom, Arrival, Meeting, RemSleep, Victory } from "./DreamDungeon";
 import { Composition, Folder } from "remotion";
 import { HelloWorld } from "./HelloWorld";
@@ -11,6 +13,17 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="GajianV2" component={GajianV2} durationInFrames={900} fps={30} width={1080} height={1920} />
+      <Composition id="GajianV2Prototype" component={GajianV2Prototype} durationInFrames={210} fps={30} width={1080} height={1920} />
+      <Composition id="Gajian" component={Gajian} durationInFrames={900} fps={30} width={1080} height={1920} />
+      <Folder name="Gajian-Scenes">
+        <Composition id="Gajian-Salary" component={SalaryScene} durationInFrames={120} fps={30} width={1080} height={1920} />
+        <Composition id="Gajian-Sultan" component={SultanScene} durationInFrames={120} fps={30} width={1080} height={1920} />
+        <Composition id="Gajian-Reality" component={RealityScene} durationInFrames={180} fps={30} width={1080} height={1920} />
+        <Composition id="Gajian-Balance" component={BalanceScene} durationInFrames={180} fps={30} width={1080} height={1920} />
+        <Composition id="Gajian-Silence" component={GajianSilenceScene} durationInFrames={150} fps={30} width={1080} height={1920} />
+        <Composition id="Gajian-Waiting" component={WaitingScene} durationInFrames={150} fps={30} width={1080} height={1920} />
+      </Folder>
       <Composition id="NotifikasiOverload" component={NotifikasiOverload} durationInFrames={600} fps={30} width={1080} height={1920} />
       <Composition id="NotifikasiOverload60" component={NotifikasiOverload} durationInFrames={1200} fps={60} width={1080} height={1920} />
       <Folder name="Notifikasi-Scenes">

@@ -1,0 +1,13 @@
+export const FPS:number;
+export const FRAMES:number;
+export const C:{navy:string;navy2:string;yellow:string;red:string;cream:string;mint:string;ink:string};
+export const expenses:{label:string;amount:number;attack:number;deduct:number;end:number}[];
+export function clamp(v:number,a?:number,b?:number):number;
+export function mix(a:number,b:number,p:number):number;
+export function smooth(t:number,a:number,b:number):number;
+export function spring(t:number,k?:number,d?:number):number;
+export function hash(n:number):number;
+export function rupiah(n:number):string;
+export function sceneAt(t:number):number;
+export function balanceAt(t:number):number;
+export function shake(t:number,start:number,strength?:number):number[];
