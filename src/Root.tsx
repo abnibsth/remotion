@@ -1,3 +1,6 @@
+import { AbniBanner } from "./AbniBanner";
+import { MotionShowreel, Opening as ShowreelOpening, Shapes as ShowreelShapes, Typography as ShowreelTypography, Dimension as ShowreelDimension, Chaos as ShowreelChaos, Finale as ShowreelFinale } from "./Showreel";
+import { SejukSigap } from "./Sejuk";
 import { NotifikasiOverload, HookScene, ComingScene, ChaosScene, BreakdownScene, SilenceScene, SolutionScene, PayoffScene } from "./Notifikasi";
 import { LumoraLaunch } from "./Lumora";
 import { GajianV2, GajianV2Prototype } from "./GajianV2";
@@ -13,6 +16,18 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="AbniGithubBanner" component={AbniBanner} durationInFrames={240} fps={30} width={1280} height={360} />
+      <Composition id="AbniGithubMaster" component={AbniBanner} durationInFrames={240} fps={30} width={2560} height={720} />
+      <Composition id="MotionShowreel" component={MotionShowreel} durationInFrames={900} fps={60} width={1920} height={1080} />
+      <Folder name="Showreel-Scenes">
+        <Composition id="Showreel-Opening" component={ShowreelOpening} durationInFrames={120} fps={60} width={1920} height={1080} />
+        <Composition id="Showreel-Shapes" component={ShowreelShapes} durationInFrames={150} fps={60} width={1920} height={1080} />
+        <Composition id="Showreel-Typography" component={ShowreelTypography} durationInFrames={150} fps={60} width={1920} height={1080} />
+        <Composition id="Showreel-Dimension" component={ShowreelDimension} durationInFrames={180} fps={60} width={1920} height={1080} />
+        <Composition id="Showreel-Chaos" component={ShowreelChaos} durationInFrames={150} fps={60} width={1920} height={1080} />
+        <Composition id="Showreel-Finale" component={ShowreelFinale} durationInFrames={150} fps={60} width={1920} height={1080} />
+      </Folder>
+      <Composition id="SejukSigap" component={SejukSigap} durationInFrames={870} fps={30} width={1080} height={1920} />
       <Composition id="GajianV2" component={GajianV2} durationInFrames={900} fps={30} width={1080} height={1920} />
       <Composition id="GajianV2Prototype" component={GajianV2Prototype} durationInFrames={210} fps={30} width={1080} height={1920} />
       <Composition id="Gajian" component={Gajian} durationInFrames={900} fps={30} width={1080} height={1920} />

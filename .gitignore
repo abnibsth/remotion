@@ -12,6 +12,8 @@ public/gajian-v2/audio/*.wav
 gajian-motion/output/
 public/gajian/audio/*.wav
 public/gajian/audio/normalization.log
+public/sejuk/audio/*.wav
+public/sejuk/audio/*.log
 /build/
 
 # Ignore the output video from Git but not videos you import into src/.
