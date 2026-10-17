@@ -1,3 +1,4 @@
+import { EverythingIsMotion } from "./EverythingIsMotion";
 import { AbniBanner } from "./AbniBanner";
 import { MotionShowreel, Opening as ShowreelOpening, Shapes as ShowreelShapes, Typography as ShowreelTypography, Dimension as ShowreelDimension, Chaos as ShowreelChaos, Finale as ShowreelFinale } from "./Showreel";
 import { SejukSigap } from "./Sejuk";
@@ -16,6 +17,8 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="EverythingIsMotion" component={EverythingIsMotion} durationInFrames={1200} fps={60} width={1920} height={1080} />
+      <Composition id="EverythingIsMotionPrototype" component={EverythingIsMotion} durationInFrames={360} fps={60} width={1920} height={1080} />
       <Composition id="AbniGithubBanner" component={AbniBanner} durationInFrames={240} fps={30} width={1280} height={360} />
       <Composition id="AbniGithubMaster" component={AbniBanner} durationInFrames={240} fps={30} width={2560} height={720} />
       <Composition id="MotionShowreel" component={MotionShowreel} durationInFrames={900} fps={60} width={1920} height={1080} />
