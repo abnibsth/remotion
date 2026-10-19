@@ -1,0 +1,11 @@
+# Production checklist
+- [x] Skills/environment and finance tests
+- [x] Continuous first-five-second prototype
+- [x] Five style frames inspected
+- [x] Prototype rendered and inspected
+- [x] Remaining continuous motion implemented
+- [x] Original score and loudness measured
+- [x] Full contact sheet and deterministic browser QC
+- [x] Master / preview / social encoded
+- [x] FFprobe, decode, frame count and audio validation
+- [x] Short production report and delivery links

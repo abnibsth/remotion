@@ -9,6 +9,9 @@ dist
 .cache/gajian-v2/
 .cache/everything-is-motion/
 .cache/everything-tests/
+.cache/money/
+public/money/audio/*.wav
+public/money/audio/*.log
 gajian-motion/v2/output/
 public/gajian-v2/audio/*.wav
 gajian-motion/output/
