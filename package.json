@@ -34,6 +34,13 @@
   },
   "scripts": {
     "dev": "remotion studio",
+    "verve:test": "node --test scripts/verve/motion.test.mjs scripts/verve/assets.test.mjs",
+    "verve:audio": "python -I scripts/verve/audio.py",
+    "verve:style": "node scripts/verve/render.mjs",
+    "verve:prototype": "node scripts/verve/render.mjs --prototype",
+    "verve:render": "node scripts/verve/render.mjs --full",
+    "verve:verify": "node scripts/verve/verify.mjs",
+    "verve:seek": "node scripts/verve/render.mjs --serve",
     "money:test": "node --test scripts/money/motion.test.mjs scripts/money/narration.test.mjs",
     "money:narration": "node scripts/money/narration.mjs",
     "money:audio": "python -I scripts/money/audio.py",

@@ -1,3 +1,4 @@
+import { VerveCommercial } from "./Verve";
 import { WhereDidMyMoneyGo } from "./WhereDidMyMoneyGo";
 import { EverythingIsMotion } from "./EverythingIsMotion";
 import { AbniBanner } from "./AbniBanner";
@@ -18,6 +19,8 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="VerveCommercial" component={VerveCommercial} durationInFrames={1200} fps={60} width={1920} height={1080} />
+      <Composition id="VervePrototype" component={VerveCommercial} durationInFrames={420} fps={60} width={1920} height={1080} />
       <Composition id="WhereDidMyMoneyGoVO" component={WhereDidMyMoneyGo} durationInFrames={1200} fps={60} width={1920} height={1080} defaultProps={{narrated:true}} />
       <Composition id="WhereDidMyMoneyGo" component={WhereDidMyMoneyGo} durationInFrames={1200} fps={60} width={1920} height={1080} />
       <Composition id="WhereDidMyMoneyGoPrototype" component={WhereDidMyMoneyGo} durationInFrames={300} fps={60} width={1920} height={1080} />

@@ -10,6 +10,9 @@ dist
 .cache/everything-is-motion/
 .cache/everything-tests/
 .cache/money/
+.cache/verve/
+public/product-commercial/verve/*.wav
+.firecrawl/
 public/money/audio/*.wav
 public/money/audio/*.log
 gajian-motion/v2/output/
