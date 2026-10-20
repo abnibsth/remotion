@@ -1,0 +1,88 @@
+PASS 1
+[aist#0:0/pcm_s16le @ 000002507e10c040] Guessed Channel Layout: stereo
+Input #0, wav, from 'D:\laragon\www\remotion\.claude\worktrees\agent-a74472d7eb5e3db77\public\money\audio\soundtrack-premaster.wav':
+  Duration: 00:00:20.00, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+[Parsed_loudnorm_0 @ 000002507e158100] 
+{
+	"input_i" : "-19.53",
+	"input_tp" : "-5.75",
+	"input_lra" : "2.80",
+	"input_thresh" : "-30.11",
+	"output_i" : "-14.06",
+	"output_tp" : "-1.50",
+	"output_lra" : "2.50",
+	"output_thresh" : "-24.56",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.06"
+}
+[out#0/null @ 000002507e0a2380] video:0KiB audio:15000KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:20.00 bitrate=N/A speed=47.6x elapsed=0:00:00.41    
+
+PASS 2
+[aist#0:0/pcm_s16le @ 0000023102295e00] Guessed Channel Layout: stereo
+Input #0, wav, from 'D:\laragon\www\remotion\.claude\worktrees\agent-a74472d7eb5e3db77\public\money\audio\soundtrack-premaster.wav':
+  Duration: 00:00:20.00, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s24le (native))
+Output #0, wav, to 'D:\laragon\www\remotion\.claude\worktrees\agent-a74472d7eb5e3db77\public\money\audio\soundtrack.wav':
+  Metadata:
+    ISFT            : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s24le
+size=    4608KiB time=00:00:17.09 bitrate=2207.6kbits/s speed=33.2x elapsed=0:00:00.51    
+[Parsed_loudnorm_0 @ 0000023100532d00] 
+{
+	"input_i" : "-19.53",
+	"input_tp" : "-5.75",
+	"input_lra" : "2.80",
+	"input_thresh" : "-30.11",
+	"output_i" : "-14.00",
+	"output_tp" : "-1.50",
+	"output_lra" : "2.50",
+	"output_thresh" : "-24.49",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.00"
+}
+[out#0/wav @ 0000023100506a80] video:0KiB audio:5625KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.001771%
+size=    5625KiB time=00:00:20.00 bitrate=2304.0kbits/s speed=  38x elapsed=0:00:00.52    
+
+FINAL WAV MEASUREMENT
+Input #0, wav, from 'D:\laragon\www\remotion\.claude\worktrees\agent-a74472d7eb5e3db77\public\money\audio\soundtrack.wav':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:20.00, bitrate: 2304 kb/s
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+[Parsed_loudnorm_0 @ 000001c3968e16c0] 
+{
+	"input_i" : "-14.05",
+	"input_tp" : "-1.56",
+	"input_lra" : "2.50",
+	"input_thresh" : "-24.63",
+	"output_i" : "-13.99",
+	"output_tp" : "-1.57",
+	"output_lra" : "2.40",
+	"output_thresh" : "-24.48",
+	"normalization_type" : "dynamic",
+	"target_offset" : "-0.01"
+}
+[out#0/null @ 000001c394d93600] video:0KiB audio:15000KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:20.00 bitrate=N/A speed=47.5x elapsed=0:00:00.42    

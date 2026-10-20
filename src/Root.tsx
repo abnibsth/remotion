@@ -1,3 +1,4 @@
+import { ClickALink } from "./ClickALink";
 import { MotionCardListicle } from "./MotionCardListicle";
 import { VerveCommercial } from "./Verve";
 import { WhereDidMyMoneyGo } from "./WhereDidMyMoneyGo";
@@ -20,6 +21,8 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="ClickALink" component={ClickALink} durationInFrames={1800} fps={60} width={1920} height={1080} />
+      <Composition id="ClickALinkPrototype" component={ClickALink} durationInFrames={600} fps={60} width={1920} height={1080} />
       <Composition id="MotionCardListicle" component={MotionCardListicle} durationInFrames={1500} fps={60} width={1080} height={1920} />
       <Composition id="MotionCardListiclePrototype" component={MotionCardListicle} durationInFrames={390} fps={60} width={1080} height={1920} />
       <Composition id="VerveCommercial" component={VerveCommercial} durationInFrames={1200} fps={60} width={1920} height={1080} />
