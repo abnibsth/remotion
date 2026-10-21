@@ -1,0 +1,207 @@
+{
+  "sample_rate": 48000,
+  "duration": 30,
+  "bpm": 120,
+  "seed": 314159,
+  "originality": "100% original NumPy synthesis; no external samples, recordings, melodies or network.",
+  "mixing": "music.wav + sfx.wav = mix.wav (within PCM24 quantization); use mix-normalized.wav for delivery. Do not stack mix with stems.",
+  "music_stop": 20,
+  "digital_silence": [
+    20,
+    20.7
+  ],
+  "events": [
+    {
+      "time": 0.7,
+      "sample": 33600,
+      "name": "notification",
+      "duration": 0.44,
+      "category": "cue",
+      "description": "Original two-note payday notification."
+    },
+    {
+      "time": 1.6,
+      "sample": 76800,
+      "name": "cash",
+      "duration": 0.5,
+      "category": "cue",
+      "description": "Cash-register-style coin cascade and paper flutter."
+    },
+    {
+      "time": 2.5,
+      "sample": 120000,
+      "name": "bass-confetti",
+      "duration": 0.5,
+      "category": "cue",
+      "description": "Bass hit, tiny stereo paper pops, celebratory brass."
+    },
+    {
+      "time": 4.4,
+      "sample": 211200,
+      "name": "luxury-sunglasses",
+      "duration": 0.6,
+      "category": "cue",
+      "description": "Polished sunglasses swipe and sparkling luxury glint."
+    },
+    {
+      "time": 8,
+      "sample": 384000,
+      "name": "tension-rise",
+      "duration": 12,
+      "category": "music",
+      "description": "Increasing subdivisions, snare fills and rising original synth; fixed 120 BPM."
+    },
+    {
+      "time": 8.0,
+      "sample": 384000,
+      "name": "warning",
+      "duration": 0.32,
+      "category": "cue",
+      "description": "Double short warning brass, entering tension section."
+    },
+    {
+      "time": 9.0,
+      "sample": 432000,
+      "name": "expense-impact",
+      "duration": 0.42,
+      "category": "cue",
+      "description": "Expense 1: progressively heavier receipt punch."
+    },
+    {
+      "time": 10.1,
+      "sample": 484800,
+      "name": "expense-impact",
+      "duration": 0.42,
+      "category": "cue",
+      "description": "Expense 2: progressively heavier receipt punch."
+    },
+    {
+      "time": 11.2,
+      "sample": 537600,
+      "name": "expense-impact",
+      "duration": 0.42,
+      "category": "cue",
+      "description": "Expense 3: progressively heavier receipt punch."
+    },
+    {
+      "time": 12.4,
+      "sample": 595200,
+      "name": "expense-impact",
+      "duration": 0.42,
+      "category": "cue",
+      "description": "Expense 4: progressively heavier receipt punch."
+    },
+    {
+      "time": 14.35,
+      "sample": 688800,
+      "name": "deduction",
+      "duration": 0.35,
+      "category": "cue",
+      "description": "Deduction 1: downward rubbery debit and paper tick."
+    },
+    {
+      "time": 15.25,
+      "sample": 732000,
+      "name": "deduction",
+      "duration": 0.35,
+      "category": "cue",
+      "description": "Deduction 2: downward rubbery debit and paper tick."
+    },
+    {
+      "time": 16.15,
+      "sample": 775200,
+      "name": "deduction",
+      "duration": 0.35,
+      "category": "cue",
+      "description": "Deduction 3: downward rubbery debit and paper tick."
+    },
+    {
+      "time": 17.05,
+      "sample": 818400,
+      "name": "deduction",
+      "duration": 0.35,
+      "category": "cue",
+      "description": "Deduction 4: downward rubbery debit and paper tick."
+    },
+    {
+      "time": 18.25,
+      "sample": 876000,
+      "name": "deduction",
+      "duration": 0.35,
+      "category": "cue",
+      "description": "Deduction 5: downward rubbery debit and paper tick."
+    },
+    {
+      "time": 19.4,
+      "sample": 931200,
+      "name": "last-deduction-landing",
+      "duration": 0.6,
+      "category": "cue",
+      "description": "Final deduction lands; all tails stop at 20.000s."
+    },
+    {
+      "time": 20.0,
+      "sample": 960000,
+      "name": "hard-cut",
+      "duration": 0.7,
+      "category": "structure",
+      "description": "All music/effects cut at sample 960000; digital silence until 20.7s."
+    },
+    {
+      "time": 20.7,
+      "sample": 993600,
+      "name": "quiet-ambience",
+      "duration": 9.3,
+      "category": "ambience",
+      "description": "Extremely quiet synthetic room air, no rhythmic bed or musical pad."
+    },
+    {
+      "time": 21.3,
+      "sample": 1022400,
+      "name": "tiny-squeak",
+      "duration": 0.17,
+      "category": "cue",
+      "description": "Tiny embarrassed rubber squeak, alone over near-inaudible air."
+    },
+    {
+      "time": 23.1,
+      "sample": 1108800,
+      "name": "isolated-sad-piano",
+      "duration": 1.65,
+      "category": "cue",
+      "description": "Single exposed A3 piano-like note; no accompanying melody/chord."
+    },
+    {
+      "time": 25.3,
+      "sample": 1214400,
+      "name": "calendar",
+      "duration": 0.2,
+      "category": "cue",
+      "description": "Dry calendar-page flick and tiny date tick."
+    },
+    {
+      "time": 26.35,
+      "sample": 1264800,
+      "name": "wallet",
+      "duration": 0.22,
+      "category": "cue",
+      "description": "Empty-wallet leather/paper flap with hollow low pop."
+    },
+    {
+      "time": 27.0,
+      "sample": 1296000,
+      "name": "sad-trombone",
+      "duration": 0.92,
+      "category": "cue",
+      "description": "Original descending muted trombone-like wah; no borrowed tune."
+    },
+    {
+      "time": 28.6,
+      "sample": 1372800,
+      "name": "soft-end",
+      "duration": 0.8,
+      "category": "cue",
+      "description": "Soft low pluck and small paper settle, fading to digital zero."
+    }
+  ]
+}

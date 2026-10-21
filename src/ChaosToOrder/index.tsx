@@ -1,0 +1,2 @@
+import React from 'react';import {Audio} from '@remotion/media';import {AbsoluteFill,staticFile,useCurrentFrame,useVideoConfig} from 'remotion';import '@fontsource/space-grotesk/latin-700.css';import '@fontsource/ibm-plex-mono/latin-500.css';import {svgAt} from './film';
+export const ChaosToOrder:React.FC=()=>{const frame=useCurrentFrame();const{fps}=useVideoConfig();return <AbsoluteFill style={{backgroundColor:'#F4F0E8'}}><div dangerouslySetInnerHTML={{__html:svgAt(frame/fps)}}/><Audio src={staticFile('chaos-to-order/audio/mix.wav')} premountFor={fps}/></AbsoluteFill>;};

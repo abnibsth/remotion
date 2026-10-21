@@ -1,0 +1,23 @@
+1
+00:00:00,300 --> 00:00:02,800
+Air can push a race car into the road.
+
+2
+00:00:03,400 --> 00:00:04,400
+But how?
+
+3
+00:00:07,200 --> 00:00:12,500
+As air moves around the car, its shape creates pressure differences.
+
+4
+00:00:13,400 --> 00:00:18,300
+The wings and underfloor help generate downforce.
+
+5
+00:00:19,500 --> 00:00:24,500
+That extra load can help the tires grip the road.
+
+6
+00:00:26,000 --> 00:00:29,500
+That's the science of downforce.

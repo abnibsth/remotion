@@ -1,3 +1,4 @@
+import { ChaosToOrder } from "./ChaosToOrder";
 import { ScienceOfDownforce } from "./Downforce";
 import { Petir } from "./Petir";
 import { WordsHaveWeight } from "./WordsHaveWeight";
@@ -24,6 +25,8 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="ChaosToOrder" component={ChaosToOrder} durationInFrames={1200} fps={60} width={1080} height={1920} />
+      <Composition id="ChaosToOrderPrototype" component={ChaosToOrder} durationInFrames={480} fps={60} width={1080} height={1920} />
       <Composition id="ScienceOfDownforce" component={ScienceOfDownforce} durationInFrames={1800} fps={60} width={1080} height={1920} />
       <Composition id="DownforcePrototype" component={ScienceOfDownforce} durationInFrames={600} fps={60} width={1080} height={1920} />
       <Composition id="KenapaPetirBisaMuncul" component={Petir} durationInFrames={1800} fps={60} width={1080} height={1920} />
