@@ -1,0 +1,210 @@
+{
+  "capturedAt": "2026-10-16T16:54:06.049Z",
+  "brand": {
+    "title": "LUMORA | Cerita Bisnis, Peluang Nyata",
+    "tokens": {
+      "forest": "",
+      "forest-deep": "",
+      "lime": "",
+      "green": "",
+      "mint": "",
+      "background": "",
+      "surface": "",
+      "ink": "",
+      "muted": "",
+      "soft-green": "",
+      "accent": "",
+      "line": ""
+    },
+    "heading": {
+      "font": "Poppins, \"Poppins Fallback\", ui-sans-serif, system-ui, sans-serif",
+      "weight": "500",
+      "size": "80px"
+    },
+    "bodyFont": "Geist, \"Geist Fallback\"",
+    "stylesheets": [
+      "https://lumora.bai01.my.id/_next/static/immutable/chunks/0obgfnd2bgxzc.css",
+      "https://lumora.bai01.my.id/_next/static/immutable/chunks/2_srn58r2ihjj.css"
+    ],
+    "images": [
+      {
+        "src": "https://lumora.bai01.my.id/_next/image?url=%2Fimg%2Flogo-nav.png&w=256&q=75",
+        "alt": "LUMORA"
+      },
+      {
+        "src": "https://lumora.bai01.my.id/_next/image?url=%2Fimg%2Fbenner.png&w=1920&q=75",
+        "alt": "Pelaku UMKM di tempat usahanya"
+      },
+      {
+        "src": "https://lumora.bai01.my.id/_next/image?url=%2Fimg%2Fbenner.png&w=1920&q=75",
+        "alt": ""
+      },
+      {
+        "src": "",
+        "alt": ""
+      },
+      {
+        "src": "",
+        "alt": ""
+      },
+      {
+        "src": "",
+        "alt": ""
+      },
+      {
+        "src": "",
+        "alt": ""
+      },
+      {
+        "src": "",
+        "alt": ""
+      },
+      {
+        "src": "https://lumora.bai01.my.id/_next/image?url=%2Fimg%2Flogo-nav.png&w=256&q=75",
+        "alt": "LUMORA"
+      }
+    ]
+  },
+  "fonts": [
+    "https://lumora.bai01.my.id/_next/static/immutable/media/829ba4228c966254-s.p.0zvxjg5nywxta.woff2",
+    "https://lumora.bai01.my.id/_next/static/immutable/media/47fe1b7cd6e6ed85-s.p.1n2oi-d4a-xww.woff2",
+    "https://lumora.bai01.my.id/_next/static/immutable/media/caa3a2e1cccd8315-s.p.0zr6hhvz-h9nw.woff2",
+    "https://lumora.bai01.my.id/_next/static/immutable/media/a218039a3287bcfd-s.p.17e3l4txdrufi.woff2",
+    "https://lumora.bai01.my.id/_next/static/immutable/media/8e6fa89aa22d24ec-s.p.1bg6trwi21i5q.woff2",
+    "https://lumora.bai01.my.id/_next/static/immutable/media/e2334d715941921e-s.p.2g9xiodaln20i.woff2"
+  ],
+  "records": [
+    {
+      "name": "section-jelajahi-umkm",
+      "url": "https://lumora.bai01.my.id/",
+      "box": {
+        "x": 0,
+        "y": -876,
+        "width": 1536,
+        "height": 2800.28125
+      },
+      "text": "TEMUKAN BISNIS\n\nTemukan cerita bisnis yang layak untuk dikenal.\n\nJelajahi UMKM dari berbagai kategori dan lihat bagaimana mereka tumbuh.\n\nSemua\nF&B\nRetail\nJasa\nKreatif\nFashion\n\nKREATIF · MALANG\n\nAksara Lokal\n\nStudio desain kemasan untuk produk pangan skala kecil.\n\nLihat profil\n→\n\nF&B · BOGOR\n\nArunika Bakery\n\nRoti rumahan yang dipanggang dalam jumlah kecil setiap pagi.\n\nLihat profil\n→\n\nJASA · BEKASI\n\nBengkel Sahabat\n\nServis motor harian dengan pencatatan perawatan pelanggan.\n\nLihat profil\n→\n\nF&B · SURABAYA\n\nDapur Nusa\n\nMasakan rumahan Nusantara untuk makan siang kantor dan keluarga.\n\nLihat profil\n→\n\nKREATIF · YOGYAKARTA\n\nKayu Rupa\n\nPerabot kecil dan benda rumah dari kayu sisa produksi.\n\nLihat profil\n→\n\nF&B · BANDUNG\n\nKopi Ruang Senja\n\nKedai kopi independen yang tumbuh bersama komunitas di sekitarnya.\n\nLihat profil\n→\nJelajahi Semua Bisnis"
+    },
+    {
+      "name": "section-fitur",
+      "url": "https://lumora.bai01.my.id/",
+      "box": {
+        "x": 0,
+        "y": 45.75,
+        "width": 1536,
+        "height": 957
+      },
+      "text": "LUMORA AI\n\nAI yang membantu, bukan mengambil keputusan.\n\nAI di LUMORA menyusun draf dan merangkum informasi yang sudah ada. Pemilik bisnis tetap memeriksa dan mengedit setiap hasilnya, dan tidak ada penilaian kelayakan yang dibuat otomatis.\n\nBatas yang kami jaga\n\nLUMORA tidak memberikan rekomendasi investasi atau menentukan kelayakan sebuah usaha.\n\nL\n\nLUMORA AI\n\nAsisten Bisnis\n\nChat AI\nL\n\nHalo! Saya LUMORA AI. Ceritakan usahamu atau tanyakan bantuan yang kamu perlukan.\n\nCeritakan bisnis saya\nBuat Business Model Canvas\nCari bisnis\nTanyakan tentang bisnismu\n↑\n\nJawaban AI bisa keliru. Periksa sebelum digunakan. Percakapan tidak disimpan setelah halaman dimuat ulang.\n\nPesan dikirim ke penyedia AI untuk menghasilkan jawaban. Hindari membagikan kata sandi atau informasi sensitif. LUMORA AI tidak menentukan kelayakan sebuah bisnis."
+    },
+    {
+      "name": "section-profil",
+      "url": "https://lumora.bai01.my.id/",
+      "box": {
+        "x": 0,
+        "y": -215.25,
+        "width": 1536,
+        "height": 1478
+      },
+      "text": "PROFIL BISNIS\n\nSatu profil. Seluruh cerita bisnis.\n\nProfil LUMORA menyusun informasi sebuah usaha dalam satu halaman yang bisa dibaca berurutan, dari cerita pemiliknya sampai kebutuhan yang sedang dicari.\n\nLihat Profil Lengkap\nA\n\nAksara Lokal\n\nKreatif · Malang\n\nContoh profil\n\nBerdiri sejak 2020 · 6 tahun berjalan\n\nTentang\n\nStudio desain kemasan untuk produk pangan skala kecil.\n\nPerkembangan\n\nPendapatan 6 bulan terakhir\nRp14.9 jt\nRp19.3 jt\nPendapatan\nRp19,3 jt/bln\nPertumbuhan\n+17% / 6 bulan\n\nPerjalanan bisnis\n\n2020\n\nUsaha mulai berjalan\n\n2021\n\nMencapai 100 pelanggan\n\n2025\n\nMenambah kapasitas\n\n2026\n\nMencari mitra\n\nBusiness Model Canvas\n\nMitra Utama\n\nPemasok lokal dan mitra logistik\n\nAktivitas Utama\n\nProduksi, layanan pelanggan, dan pengembangan produk\n\nSumber Daya Utama\n\nTim, keterampilan, tempat usaha, dan peralatan\n\nProposisi Nilai\n\nProduk lokal dengan layanan yang dekat dan personal\n\nHubungan Pelanggan\n\nPelayanan langsung dan komunikasi melalui media sosial\n\nSaluran\n\nToko, pesan langsung, dan marketplace\n\nSegmen Pelanggan\n\nPelanggan lokal dan pembeli daring\n\nStruktur Biaya\n\nBahan baku, operasional, tenaga kerja, dan distribusi\n\nSumber Pendapatan\n\nPenjualan produk dan pesanan khusus\n\nKebutuhan saat ini\n\nMitra Proyek\n\nBekerja dengan pendamping UMKM untuk menangani kelompok usaha secara berkala.\n\nInformasi berasal dari profil yang dipublikasikan pemilik bisnis."
+    },
+    {
+      "name": "section-perjalanan",
+      "url": "https://lumora.bai01.my.id/",
+      "box": {
+        "x": 0,
+        "y": -32.9375,
+        "width": 1536,
+        "height": 1113
+      },
+      "text": "PERJALANAN BISNIS\n\nBukan hanya angka. Lihat perjalanan di balik bisnisnya.\n\nAngka menunjukkan hasil akhir, bukan prosesnya. LUMORA menyimpan tonggak perjalanan sebuah usaha, supaya calon mitra bisa melihat bagaimana bisnis itu sampai di titik sekarang.\n\nContoh perjalanan dengan data ilustrasi.\n\nPerjalanan Aksara Lokal\n\n2020\n\nUsaha mulai berjalan\n\nProduk pertama diperkenalkan kepada pelanggan sekitar.\n\n2021\n\nMencapai 100 pelanggan\n\nPesanan berulang mulai membentuk basis pelanggan tetap.\n\n2025\n\nMenambah kapasitas\n\nPilihan produk dan kemampuan produksi diperluas.\n\n2026\n\nMencari mitra\n\nPemilik membuka percakapan untuk tahap pertumbuhan berikutnya."
+    },
+    {
+      "name": "section-untuk-siapa",
+      "url": "https://lumora.bai01.my.id/",
+      "box": {
+        "x": 0,
+        "y": 11.75,
+        "width": 1536,
+        "height": 1025.3125
+      },
+      "text": "UNTUK SIAPA\n\nSatu platform, dua cara memakainya.\n\nPemilik usaha dan calon mitra datang dengan kebutuhan yang berbeda, jadi LUMORA menyiapkan alur untuk masing-masing.\n\nPELAKU UMKM\n\nBuat bisnismu lebih mudah ditemukan.\n—\nProfil bisnis yang tersusun rapi\n—\nAsisten profil dan kanvas model bisnis\n—\nPerjalanan bisnis yang tercatat\n—\nTerlihat oleh calon mitra\nMulai Buat Profil\n\nPEMODAL DAN MITRA\n\nTemukan bisnis yang ingin kamu kenal lebih jauh.\n—\nDiscovery hub dengan filter kategori\n—\nProfil bisnis yang bisa dibaca berurutan\n—\nRingkasan AI atas informasi yang tersedia\n—\nPerjalanan bisnis dan indikator perkembangannya\nMulai Menjelajah"
+    },
+    {
+      "name": "ai-interface",
+      "url": "https://lumora.bai01.my.id/",
+      "box": {
+        "x": 694.390625,
+        "y": 217.75,
+        "width": 681.609375,
+        "height": 613
+      },
+      "text": "L\n\nLUMORA AI\n\nAsisten Bisnis\n\nChat AI\nL\n\nHalo! Saya LUMORA AI. Ceritakan usahamu atau tanyakan bantuan yang kamu perlukan.\n\nCeritakan bisnis saya\nBuat Business Model Canvas\nCari bisnis\nTanyakan tentang bisnismu\n↑\n\nJawaban AI bisa keliru. Periksa sebelum digunakan. Percakapan tidak disimpan setelah halaman dimuat ulang."
+    },
+    {
+      "name": "profile-preview",
+      "url": "https://lumora.bai01.my.id/",
+      "box": {
+        "x": 160,
+        "y": 34.75,
+        "width": 1216,
+        "height": 978
+      },
+      "text": "A\n\nAksara Lokal\n\nKreatif · Malang\n\nContoh profil\n\nBerdiri sejak 2020 · 6 tahun berjalan\n\nTentang\n\nStudio desain kemasan untuk produk pangan skala kecil.\n\nPerkembangan\n\nPendapatan 6 bulan terakhir\nRp14.9 jt\nRp19.3 jt\nPendapatan\nRp19,3 jt/bln\nPertumbuhan\n+17% / 6 bulan\n\nPerjalanan bisnis\n\n2020\n\nUsaha mulai berjalan\n\n2021\n\nMencapai 100 pelanggan\n\n2025\n\nMenambah kapasitas\n\n2026\n\nMencari mitra\n\nBusiness Model Canvas\n\nMitra Utama\n\nPemasok lokal dan mitra logistik\n\nAktivitas Utama\n\nProduksi, layanan pelanggan, dan pengembangan produk\n\nSumber Daya Utama\n\nTim, keterampilan, tempat usaha, dan peralatan\n\nProposisi Nilai\n\nProduk lokal dengan layanan yang dekat dan personal\n\nHubungan Pelanggan\n\nPelayanan langsung dan komunikasi melalui media sosial\n\nSaluran\n\nToko, pesan langsung, dan marketplace\n\nSegmen Pelanggan\n\nPelanggan lokal dan pembeli daring\n\nStruktur Biaya\n\nBahan baku, operasional, tenaga kerja, dan distribusi\n\nSumber Pendapatan\n\nPenjualan produk dan pesanan khusus\n\nKebutuhan saat ini\n\nMitra Proyek\n\nBekerja dengan pendamping UMKM untuk menangani kelompok usaha secara berkala."
+    },
+    {
+      "name": "discovery-card",
+      "url": "https://lumora.bai01.my.id/",
+      "box": {
+        "x": 160,
+        "y": 212.3125,
+        "width": 1215.984375,
+        "height": 624
+      },
+      "text": "KREATIF · MALANG\n\nAksara Lokal\n\nStudio desain kemasan untuk produk pangan skala kecil.\n\nLihat profil\n→"
+    },
+    {
+      "name": "discovery",
+      "url": "https://lumora.bai01.my.id/explore",
+      "text": "Jelajahi Bisnis\n\nTemukan bisnis lokal yang layak dikenal.\n\nJelajahi cerita, perkembangan, dan kebutuhan UMKM dari berbagai daerah di Indonesia.\n\nBisnis untuk kamu kenali\n\nInformasi berasal dari profil yang dipublikasikan pemilik.\n\nCari bisnis\nSemua\n⌄\n\n9 bisnis ditemukan\n\nKreatif\n\nMalang · 6 tahun berjalan\n\nAksara Lokal\n\nStudio desain kemasan untuk produk pangan skala kecil.\n\nSedang mencari · Mitra Proyek\nLihat cerita\n→\nF&B\n\nBogor · 5 tahun berjalan\n\nArunika Bakery\n\nRoti rumahan yang dipanggang dalam jumlah kecil setiap pagi.\n\nSedang mencari · Mitra Distribusi\nLihat cerita\n→\nJasa\n\nBekasi · 9 tahun berjalan\n\nBengkel Sahabat\n\nServis motor harian dengan pencatatan perawatan pelanggan.\n\nSedang mencari · Mitra Peralatan\nLihat cerita\n→\nF&B\n\nSurabaya · 4 tahun berjalan\n\nDapur Nusa\n\nMasakan rumahan Nusantara untuk makan siang kantor dan keluarga.\n\nSedang mencari · Mitra Operasional\nLihat cerita\n→\nKreatif\n\nYogyakarta · 7 tahun berjalan\n\nKayu Rupa\n\nPerabot kecil dan benda rumah dari kayu sisa produksi.\n\nSedang mencari · Mitra Retail\nLihat cerita\n→\nF&B\n\nBandung · 3 tahun berjalan\n\nKopi Ruang Senja\n\nKedai kopi independen yang tumbuh bersama komunitas di sekitarnya.\n\nSedang mencari · Mitra Ekspansi\nLihat cerita\n→\n\nCerita dari berbagai kota\n\nUsaha lokal tumbuh dengan cara yang berbeda di setiap tempat.\n\nFashion\n\nJakarta · 6 tahun berjalan\n\nNara Studio\n\nStudio busana dengan produksi terbatas dan pendekatan made-to-order.\n\nSedang mencari · Mitra Produksi\nLihat cerita\n→\nKreatif\n\nBali · 8 tahun berjalan\n\nSora Craft\n\nKerajinan serat alam yang dibuat bersama perajin lokal.\n\nSedang mencari · Mitra Distribusi\nLihat cerita\n→\nRetail\n\nSemarang · 5 tahun berjalan\n\nTumbuh Toko\n\nToko kebutuhan isi ulang untuk rumah tangga sekitar.\n\nSedang mencari · Mitra Teknologi\nLihat cerita\n→"
+    },
+    {
+      "name": "card-0",
+      "url": "https://lumora.bai01.my.id/explore",
+      "box": {
+        "x": 184,
+        "y": 501.859375,
+        "width": 97.65625,
+        "height": 44
+      },
+      "text": "Lihat cerita\n→"
+    },
+    {
+      "name": "card-1",
+      "url": "https://lumora.bai01.my.id/explore",
+      "box": {
+        "x": 597.328125,
+        "y": 501.859375,
+        "width": 97.65625,
+        "height": 44
+      },
+      "text": "Lihat cerita\n→"
+    },
+    {
+      "name": "card-2",
+      "url": "https://lumora.bai01.my.id/explore",
+      "box": {
+        "x": 1010.65625,
+        "y": 501.875,
+        "width": 97.65625,
+        "height": 44
+      },
+      "text": "Lihat cerita\n→"
+    },
+    {
+      "name": "profile",
+      "url": "https://lumora.bai01.my.id/business/aksara-lokal",
+      "text": "←\nJelajahi Bisnis\nA\n\nKreatif · Malang · Berdiri 2020\n\nAksara Lokal\n\nStudio desain kemasan untuk produk pangan skala kecil.\n\nSimpan\nHubungi Pemilik\nOverview\nPerjalanan\nModel Bisnis\nPerkembangan\n\nTentang Bisnis\n\nCerita di balik Aksara Lokal\n\nAksara Lokal membantu pemilik usaha merapikan kemasan tanpa kehilangan cerita asal produknya. Studio bekerja dalam tim kecil dan menangani proyek secara bergiliran.\n\nM\nMira Anindya\n\nDirektur kreatif\n\nMira memimpin riset, desain, dan komunikasi dengan pemilik usaha.\n\nPerjalanan Bisnis\n\nLangkah yang membentuk usaha ini\n\n2020\n\nUsaha mulai berjalan\n\nProduk pertama diperkenalkan kepada pelanggan sekitar.\n\n2021\n\nMencapai 100 pelanggan\n\nPesanan berulang mulai membentuk basis pelanggan tetap.\n\n2025\n\nMenambah kapasitas\n\nPilihan produk dan kemampuan produksi diperluas.\n\n2026\n\nMencari mitra\n\nPemilik membuka percakapan untuk tahap pertumbuhan berikutnya.\n\nPerkembangan Bisnis\n\nCatatan enam bulan terakhir\n\nInformasi ini dikirim oleh pemilik bisnis dan belum diverifikasi LUMORA.\n\nPendapatan bulanan\nRp19,3 jt/bln\nPertumbuhan\n+17% / 6 bulan\nPendapatan 6 bulan terakhir\nRp14.9 jt\nRp19.3 jt\n\nBusiness Model Canvas\n\nGambaran cara bisnis bekerja\nMitra Utama\n\nPemasok lokal dan mitra logistik\n\nAktivitas Utama\n\nProduksi, layanan pelanggan, dan pengembangan produk\n\nSumber Daya Utama\n\nTim, keterampilan, tempat usaha, dan peralatan\n\nProposisi Nilai\n\nProduk lokal dengan layanan yang dekat dan personal\n\nHubungan Pelanggan\n\nPelayanan langsung dan komunikasi melalui media sosial\n\nSaluran\n\nToko, pesan langsung, dan marketplace\n\nSegmen Pelanggan\n\nPelanggan lokal dan pembeli daring\n\nStruktur Biaya\n\nBahan baku, operasional, tenaga kerja, dan distribusi\n\nSumber Pendapatan\n\nPenjualan produk dan pesanan khusus\n\nYang Sedang Dicari\n\nMitra Proyek\n\nBekerja dengan pendamping UMKM untuk menangani kelompok usaha secara berkala.\n\nHubungi Pemilik\n\nInformasi profil dikirim oleh pemilik bisnis.",
+      "html": "<article><div class=\"mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8 py-6\"><a class=\"inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-forest hover:text-accent\" href=\"/explore\"><span aria-hidden=\"true\">←</span> Jelajahi Bisnis</a></div><div class=\"mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8\"><div class=\"relative min-h-[260px] overflow-hidden rounded-2xl bg-mint sm:min-h-[360px] md:min-h-[520px]\"><img alt=\"Suasana Aksara Lokal\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-position:center;color:transparent\" sizes=\"(min-width: 1280px) 1216px, 100vw\" srcset=\"/_next/image?url=%2Fimg%2Fbenner.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimg%2Fbenner.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimg%2Fbenner.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimg%2Fbenner.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimg%2Fbenner.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimg%2Fbenner.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimg%2Fbenner.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimg%2Fbenner.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimg%2Fbenner.png&amp;w=3840&amp;q=75\"><div class=\"absolute inset-0 bg-gradient-to-t from-forest/45 via-transparent to-transparent\"></div></div></div><div class=\"mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8 relative -mt-12 z-10\"><div class=\"border-b border-line bg-surface px-6 py-8 md:px-10 md:py-10\"><div class=\"flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between\"><div class=\"flex flex-col gap-5 sm:flex-row sm:items-center\"><span aria-hidden=\"true\" class=\"inline-flex shrink-0 items-center justify-center rounded-xl bg-forest font-semibold text-mint select-none h-20 w-20 text-3xl\">A</span><div><p class=\"text-sm font-medium text-accent\">Kreatif<!-- --> · <!-- -->Malang<!-- --> · Berdiri <!-- -->2020</p><h1 class=\"mt-2 break-words font-display text-[clamp(2.5rem,12vw,4.5rem)] font-semibold leading-[0.98] text-ink\">Aksara Lokal</h1><p class=\"mt-4 max-w-2xl text-lg leading-8 text-muted\">Studio desain kemasan untuk produk pangan skala kecil.</p></div></div><div class=\"flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap\"><div><button type=\"button\" aria-pressed=\"false\" class=\"inline-flex items-center justify-center gap-2 rounded-xl border font-medium transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-forest disabled:pointer-events-none disabled:opacity-50 min-h-11 px-5 text-sm border-line-strong bg-surface text-forest hover:bg-soft-green w-full sm:w-auto\">Simpan</button></div><a href=\"mailto:?subject=Percakapan tentang Aksara%20Lokal\" class=\"inline-flex items-center justify-center gap-2 rounded-xl border font-medium transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-forest disabled:pointer-events-none disabled:opacity-50 min-h-11 px-5 text-sm border-transparent bg-forest text-white hover:bg-forest-deep w-full sm:w-auto\">Hubungi Pemilik</a></div></div></div></div><div class=\"sticky top-[4.5rem] z-20 mt-10 border-y border-line bg-surface/95 backdrop-blur-sm\"><div class=\"mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8\"><nav aria-label=\"Bagian profil\" class=\"-mx-5 flex gap-6 overflow-x-auto px-5 py-1 sm:mx-0 sm:px-0\"><a href=\"#overview\" class=\"inline-flex min-h-12 shrink-0 items-center text-sm font-semibold text-forest\">Overview</a><a href=\"#perjalanan\" class=\"inline-flex min-h-12 shrink-0 items-center text-sm font-semibold text-forest\">Perjalanan</a><a href=\"#model-bisnis\" class=\"inline-flex min-h-12 shrink-0 items-center text-sm font-semibold text-forest\">Model Bisnis</a><a href=\"#perkembangan\" class=\"inline-flex min-h-12 shrink-0 items-center text-sm font-semibold text-forest\">Perkembangan</a></nav></div></div><section id=\"overview\" class=\"scroll-mt-36 py-16 md:py-24\"><div class=\"mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8\"><div class=\"grid gap-12 lg:grid-cols-[1.5fr_0.8fr]\"><div><p class=\"text-sm font-medium text-accent\">Tentang Bisnis</p><h2 class=\"mt-3 font-display text-4xl font-semibold text-ink\">Cerita di balik <!-- -->Aksara Lokal</h2><p class=\"mt-6 text-lg leading-8 text-muted\">Aksara Lokal membantu pemilik usaha merapikan kemasan tanpa kehilangan cerita asal produknya. Studio bekerja dalam tim kecil dan menangani proyek secara bergiliran.</p></div><aside class=\"rounded-2xl bg-mint/35 p-7\"><span aria-hidden=\"true\" class=\"inline-flex shrink-0 items-center justify-center rounded-xl bg-forest font-semibold text-mint select-none h-16 w-16 text-2xl\">M</span><h3 class=\"mt-5 font-display text-2xl font-semibold text-ink\">Mira Anindya</h3><p class=\"mt-1 text-sm font-medium text-accent\">Direktur kreatif</p><p class=\"mt-4 leading-7 text-muted\">Mira memimpin riset, desain, dan komunikasi dengan pemilik usaha.</p></aside></div></div></section><section id=\"perjalanan\" class=\"scroll-mt-36 bg-surface py-16 md:py-24\"><div class=\"mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8\"><p class=\"text-sm font-medium text-accent\">Perjalanan Bisnis</p><h2 class=\"mt-3 font-display text-4xl font-semibold text-ink\">Langkah yang membentuk usaha ini</h2><ol class=\"mt-12 grid gap-0 md:grid-cols-4\"><li class=\"relative border-l border-forest/25 pb-9 pl-7 md:border-l-0 md:border-t md:px-4 md:pt-7\"><span class=\"absolute -left-2 top-0 h-4 w-4 rounded-full bg-green ring-4 ring-surface md:-top-2 md:left-4\"></span><p class=\"text-2xl font-semibold text-forest\">2020</p><h3 class=\"mt-2 font-semibold text-ink\">Usaha mulai berjalan</h3><p class=\"mt-2 text-sm leading-6 text-muted\">Produk pertama diperkenalkan kepada pelanggan sekitar.</p></li><li class=\"relative border-l border-forest/25 pb-9 pl-7 md:border-l-0 md:border-t md:px-4 md:pt-7\"><span class=\"absolute -left-2 top-0 h-4 w-4 rounded-full bg-green ring-4 ring-surface md:-top-2 md:left-4\"></span><p class=\"text-2xl font-semibold text-forest\">2021</p><h3 class=\"mt-2 font-semibold text-ink\">Mencapai 100 pelanggan</h3><p class=\"mt-2 text-sm leading-6 text-muted\">Pesanan berulang mulai membentuk basis pelanggan tetap.</p></li><li class=\"relative border-l border-forest/25 pb-9 pl-7 md:border-l-0 md:border-t md:px-4 md:pt-7\"><span class=\"absolute -left-2 top-0 h-4 w-4 rounded-full bg-green ring-4 ring-surface md:-top-2 md:left-4\"></span><p class=\"text-2xl font-semibold text-forest\">2025</p><h3 class=\"mt-2 font-semibold text-ink\">Menambah kapasitas</h3><p class=\"mt-2 text-sm leading-6 text-muted\">Pilihan produk dan kemampuan produksi diperluas.</p></li><li class=\"relative border-l border-forest/25 pb-9 pl-7 md:border-l-0 md:border-t md:px-4 md:pt-7\"><span class=\"absolute -left-2 top-0 h-4 w-4 rounded-full bg-green ring-4 ring-surface md:-top-2 md:left-4\"></span><p class=\"text-2xl font-semibold text-forest\">2026</p><h3 class=\"mt-2 font-semibold text-ink\">Mencari mitra</h3><p class=\"mt-2 text-sm leading-6 text-muted\">Pemilik membuka percakapan untuk tahap pertumbuhan berikutnya.</p></li></ol></div></section><section id=\"perkembangan\" class=\"scroll-mt-36 py-20 md:py-32\"><div class=\"mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8\"><div class=\"grid gap-12 lg:grid-cols-[0.65fr_1.35fr]\"><div><p class=\"text-sm font-medium text-accent\">Perkembangan Bisnis</p><h2 class=\"mt-3 font-display text-4xl font-semibold text-ink md:text-5xl\">Catatan enam bulan terakhir</h2><p class=\"mt-5 text-sm text-muted\">Informasi ini dikirim oleh pemilik bisnis dan belum diverifikasi LUMORA.</p></div><div><dl class=\"grid border-y border-line sm:grid-cols-2\"><div class=\"py-6 sm:border-r sm:border-line sm:pr-6\"><dt class=\"text-sm text-muted\">Pendapatan bulanan</dt><dd class=\"mt-2 text-4xl font-semibold text-forest\">Rp19,3 jt/bln</dd></div><div class=\"border-t border-line py-6 sm:border-t-0 sm:pl-6\"><dt class=\"text-sm text-muted\">Pertumbuhan</dt><dd class=\"mt-2 text-4xl font-semibold text-forest\">+17% / 6 bulan</dd></div></dl><figure class=\"m-0 mt-10\"><figcaption class=\"text-xs font-medium text-muted\">Pendapatan <!-- -->6<!-- --> bulan terakhir</figcaption><div role=\"img\" aria-label=\"Pendapatan bulanan selama 6 bulan terakhir, bergerak dari 14.9 juta rupiah menjadi 19.3 juta rupiah.\" class=\"mt-3 flex h-16 items-end gap-1.5\"><span class=\"flex-1 rounded-[2px] bg-accent\" style=\"height:25%\"></span><span class=\"flex-1 rounded-[2px] bg-accent\" style=\"height:35.22727272727272%\"></span><span class=\"flex-1 rounded-[2px] bg-accent\" style=\"height:47.15909090909089%\"></span><span class=\"flex-1 rounded-[2px] bg-accent\" style=\"height:67.61363636363632%\"></span><span class=\"flex-1 rounded-[2px] bg-accent\" style=\"height:79.54545454545456%\"></span><span class=\"flex-1 rounded-[2px] bg-accent\" style=\"height:100%\"></span></div><div class=\"mt-2 flex justify-between text-xs text-muted\"><span>Rp<!-- -->14.9<!-- --> jt</span><span>Rp<!-- -->19.3<!-- --> jt</span></div></figure></div></div></div></section><section id=\"model-bisnis\" class=\"scroll-mt-36 bg-surface py-16 md:py-24\"><div class=\"mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8\"><p class=\"text-sm font-medium text-accent\">Business Model Canvas</p><h2 class=\"mt-3 font-display text-4xl font-semibold text-ink\">Gambaran cara bisnis bekerja</h2><div class=\"mt-10 grid gap-px overflow-hidden rounded-2xl bg-line sm:grid-cols-2 lg:grid-cols-3\"><div class=\"bg-surface p-6\"><h3 class=\"text-sm font-semibold text-forest\">Mitra Utama</h3><p class=\"mt-3 text-sm leading-6 text-muted\">Pemasok lokal dan mitra logistik</p></div><div class=\"bg-surface p-6\"><h3 class=\"text-sm font-semibold text-forest\">Aktivitas Utama</h3><p class=\"mt-3 text-sm leading-6 text-muted\">Produksi, layanan pelanggan, dan pengembangan produk</p></div><div class=\"bg-surface p-6\"><h3 class=\"text-sm font-semibold text-forest\">Sumber Daya Utama</h3><p class=\"mt-3 text-sm leading-6 text-muted\">Tim, keterampilan, tempat usaha, dan peralatan</p></div><div class=\"bg-surface p-6\"><h3 class=\"text-sm font-semibold text-forest\">Proposisi Nilai</h3><p class=\"mt-3 text-sm leading-6 text-muted\">Produk lokal dengan layanan yang dekat dan personal</p></div><div class=\"bg-surface p-6\"><h3 class=\"text-sm font-semibold text-forest\">Hubungan Pelanggan</h3><p class=\"mt-3 text-sm leading-6 text-muted\">Pelayanan langsung dan komunikasi melalui media sosial</p></div><div class=\"bg-surface p-6\"><h3 class=\"text-sm font-semibold text-forest\">Saluran</h3><p class=\"mt-3 text-sm leading-6 text-muted\">Toko, pesan langsung, dan marketplace</p></div><div class=\"bg-surface p-6\"><h3 class=\"text-sm font-semibold text-forest\">Segmen Pelanggan</h3><p class=\"mt-3 text-sm leading-6 text-muted\">Pelanggan lokal dan pembeli daring</p></div><div class=\"bg-surface p-6\"><h3 class=\"text-sm font-semibold text-forest\">Struktur Biaya</h3><p class=\"mt-3 text-sm leading-6 text-muted\">Bahan baku, operasional, tenaga kerja, dan distribusi</p></div><div class=\"bg-surface p-6\"><h3 class=\"text-sm font-semibold text-forest\">Sumber Pendapatan</h3><p class=\"mt-3 text-sm leading-6 text-muted\">Penjualan produk dan pesanan khusus</p></div></div></div></section><section class=\"py-20 md:py-32\"><div class=\"mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8\"><div class=\"grid gap-12 border-t border-forest pt-12 lg:grid-cols-[0.6fr_1.4fr]\"><div><p class=\"text-sm font-medium text-accent\">Yang Sedang Dicari</p><h2 class=\"mt-3 font-display text-4xl font-semibold text-ink\">Mitra Proyek</h2></div><div><p class=\"max-w-2xl text-xl leading-9 text-muted\">Bekerja dengan pendamping UMKM untuk menangani kelompok usaha secara berkala.</p><a href=\"mailto:?subject=Percakapan tentang Aksara%20Lokal\" class=\"inline-flex items-center justify-center gap-2 rounded-xl border font-medium transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-forest disabled:pointer-events-none disabled:opacity-50 min-h-12 px-6 text-base border-transparent bg-forest text-white hover:bg-forest-deep mt-8\">Hubungi Pemilik</a></div></div><p class=\"mt-14 border-t border-line pt-6 text-sm text-muted\">Informasi profil dikirim oleh pemilik bisnis.</p></div></section></article><!--$--><!--/$-->"
+    }
+  ]
+}

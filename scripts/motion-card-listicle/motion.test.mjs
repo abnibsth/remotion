@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {build} from 'esbuild';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const file=path.resolve('.cache/motion-card-listicle-tests/motion.mjs');
+await build({entryPoints:['src/MotionCardListicle/lib/motion.ts'],outfile:file,bundle:true,platform:'node',format:'esm'});
+const m=await import(pathToFileURL(file));
+test('exact 25-second timeline contains 1500 frames at 60fps',()=>{assert.equal(m.DURATION,25);assert.equal(m.FPS*m.DURATION,1500);});
+test('cubic Bezier keeps endpoints and distinguishes eased from linear travel',()=>{assert.equal(m.ease(0),0);assert.equal(m.ease(1),1);assert.ok(m.ease(.25)<.25);assert.ok(m.ease(.75)>.75);assert.ok(Math.abs(m.ease(.5)-.5)<1e-6);});
+test('closed-form spring starts at rest and settles without accumulated state',()=>{assert.equal(m.spring(0),0);assert.ok(Math.abs(m.spring(3)-1)<.001);assert.equal(m.spring(.7),m.spring(.7));});
+test('anticipation moves backwards before releasing forwards',()=>{assert.ok(m.arrowX(.9)<m.arrowX(.5));assert.ok(m.arrowX(1.85)>m.arrowX(1.3));});
+test('ball deformation conserves visual area and bounce amplitudes decay',()=>{for(let t=0;t<3.5;t+=.015){const b=m.ballState(t);assert.ok(Math.abs(b.sx*b.sy-1)<1e-8);assert.ok(b.y<=1110.001);assert.ok(Number.isFinite(b.y));}assert.ok(m.ballState(1.6).y<m.ballState(2.4).y);});
+test('timing variants share endpoints with strictly ordered arrival times',()=>{assert.ok(m.timingProgress(.4,.45)>m.timingProgress(.4,1.1));assert.ok(m.timingProgress(.4,1.1)>m.timingProgress(.4,2.0));for(const d of [.45,1.1,2.0])assert.equal(m.timingProgress(3,d),1);});
+test('ribbon continues after its parent stops and then settles',()=>{assert.equal(m.followX(2),m.followX(3));assert.notEqual(m.ribbonLag(1.6),m.ribbonLag(2));assert.ok(Math.abs(m.ribbonLag(3.3))<2);});
+test('all motion functions are finite and order-independent across the full timeline',()=>{const sample=t=>[m.arrowX(t),m.ballState(t),m.followX(t),m.ribbonLag(t)];const a=JSON.stringify(sample(1.73));sample(.1);sample(3.6);assert.equal(JSON.stringify(sample(1.73)),a);for(let i=0;i<1500;i++)assert.ok(!JSON.stringify(sample(i/60)).includes('null'));});
+await fs.stat(file);

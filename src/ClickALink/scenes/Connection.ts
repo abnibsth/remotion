@@ -1,0 +1,5 @@
+import {C,appear,badge,dot,endpoint,heading,lock,message,mt,route} from '../lib/design';
+import {E,S,routePoint} from '../lib/motion';
+export function connectionScene(t:number){const secure=S(t,2.35);const pulses=[{a:.45,b:.85,reverse:false,label:'SYN'},{a:.85,b:1.2,reverse:true,label:'SYN·ACK'},{a:1.2,b:1.5,reverse:false,label:'ACK'},{a:1.55,b:1.95,reverse:false,label:'TLS'},{a:1.95,b:2.3,reverse:true,label:'TLS'}];
+ return `${heading(t,4,'SECURE CONNECTION','Establishing a protected channel.')}${route(t,t>=2.35)}${endpoint(380,650,'browser','BROWSER')}${endpoint(1540,650,'server','DESTINATION')}${mt(1540,800,'203.0.113.10',22,C.amber,'text-anchor="middle"')}${pulses.map(p=>{if(t<p.a||t>p.b+.08)return '';const q=routePoint(p.reverse?1-E(t,p.a,p.b):E(t,p.a,p.b));return message(q.x,q.y,p.label,p.label==='TLS'?C.cyan:C.blue,.65);}).join('')}${appear(mt(770,421,'HTTP/2 · TCP + TLS',26,C.white),t,.22)}${lock(960,495,secure)}${appear(badge(105,865,'ENCRYPTED'),t,2.35)}${mt(1816,891,'CONNECTIONS MAY BE REUSED',20,C.slate,'text-anchor="end"')}${dot(1540,650,7,C.amber)}`;
+}

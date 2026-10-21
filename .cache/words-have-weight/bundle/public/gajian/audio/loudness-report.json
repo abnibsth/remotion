@@ -1,0 +1,135 @@
+{
+  "source": "Original seeded NumPy synthesis, no external recordings/samples.",
+  "python_dependencies": {
+    "numpy": "2.2.6"
+  },
+  "ffmpeg": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "normalization": {
+    "method": "FFmpeg two-pass loudnorm plus measured gain correction and 192kHz safety limiter; independently remeasured after exact silence restoration",
+    "target_lufs": -14,
+    "delivery_ceiling_dbtp": -1,
+    "processing_ceiling_dbtp": -1.1,
+    "first_pass": {
+      "input_i": "-21.16",
+      "input_tp": "-3.07",
+      "input_lra": "11.30",
+      "input_thresh": "-31.93",
+      "output_i": "-14.80",
+      "output_tp": "-1.10",
+      "output_lra": "7.10",
+      "output_thresh": "-25.36",
+      "normalization_type": "dynamic",
+      "target_offset": "0.80"
+    }
+  },
+  "files": {
+    "music.wav": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth": 24,
+      "frames": 1440000,
+      "duration": 30.0,
+      "sample_peak_dbfs": -4.322011958513746,
+      "loudness": {
+        "input_i": "-22.21",
+        "input_tp": "-3.12",
+        "input_lra": "2.40",
+        "input_thresh": "-32.23",
+        "output_i": "-14.18",
+        "output_tp": "-1.10",
+        "output_lra": "0.70",
+        "output_thresh": "-24.20",
+        "normalization_type": "dynamic",
+        "target_offset": "0.18"
+      },
+      "sha256": "e317009ea235851f1daa3577b428086ce6a47069bf1b950fdbe4f25feda27276",
+      "silence_20_to_20_7_nonzero_samples": 0,
+      "ambience_20_75_to_21_2_rms_dbfs": -240.0
+    },
+    "sfx.wav": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth": 24,
+      "frames": 1440000,
+      "duration": 30.0,
+      "sample_peak_dbfs": -4.790676062471164,
+      "loudness": {
+        "input_i": "-23.13",
+        "input_tp": "-4.79",
+        "input_lra": "7.20",
+        "input_thresh": "-35.12",
+        "output_i": "-15.07",
+        "output_tp": "-1.10",
+        "output_lra": "3.70",
+        "output_thresh": "-26.93",
+        "normalization_type": "dynamic",
+        "target_offset": "1.07"
+      },
+      "sha256": "59fcd53b662aac9ee4e23c1468e816a1254df67a0f0490669344a22831fbb7d9",
+      "silence_20_to_20_7_nonzero_samples": 0,
+      "ambience_20_75_to_21_2_rms_dbfs": -96.45525199691863
+    },
+    "mix.wav": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth": 24,
+      "frames": 1440000,
+      "duration": 30.0,
+      "sample_peak_dbfs": -3.069621375996719,
+      "loudness": {
+        "input_i": "-21.16",
+        "input_tp": "-3.07",
+        "input_lra": "11.30",
+        "input_thresh": "-31.93",
+        "output_i": "-14.80",
+        "output_tp": "-1.10",
+        "output_lra": "7.10",
+        "output_thresh": "-25.36",
+        "normalization_type": "dynamic",
+        "target_offset": "0.80"
+      },
+      "sha256": "577c37d4e049bb641b3266100cffdd2260ddc7ab0785bf373bcf9712aa1ae184",
+      "silence_20_to_20_7_nonzero_samples": 0,
+      "ambience_20_75_to_21_2_rms_dbfs": -96.45525199691863
+    },
+    "mix-normalized.wav": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth": 24,
+      "frames": 1440000,
+      "duration": 30.0,
+      "sample_peak_dbfs": -1.351702467361979,
+      "loudness": {
+        "input_i": "-14.02",
+        "input_tp": "-1.32",
+        "input_lra": "9.30",
+        "input_thresh": "-24.78",
+        "output_i": "-13.89",
+        "output_tp": "-1.10",
+        "output_lra": "6.50",
+        "output_thresh": "-24.44",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.11"
+      },
+      "sha256": "e4d789391e636c057f1c062e07b60268088e98b534402c8e4b06d7370728f14a",
+      "silence_20_to_20_7_nonzero_samples": 0,
+      "ambience_20_75_to_21_2_rms_dbfs": -88.76053658631768
+    }
+  },
+  "validation": {
+    "exact_30s_48k_stereo_pcm24": true,
+    "silence_is_digital_zero": true,
+    "music_silent_from_20": true,
+    "loudness_within_0_3_lu_of_minus_14": true,
+    "true_peak_at_or_below_minus_1": true,
+    "all_files_unclipped": true,
+    "normalized_ambience_below_minus_65_dbfs": true,
+    "all_passed": true
+  },
+  "constraints": [
+    "No voice-over or licensed/reference melody included.",
+    "48kHz PCM24 delivery; loudness/true-peak values apply to WAV, not a later lossy encode.",
+    "Post-cut sad piano and trombone are isolated foley on sfx.wav; music.wav remains zero after 20s.",
+    "Deterministic for a fixed NumPy/FFmpeg toolchain; different FFmpeg versions may vary normalized PCM."
+  ]
+}

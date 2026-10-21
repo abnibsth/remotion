@@ -1,0 +1,111 @@
+{
+  "product": {
+    "brand": "MYKONOS",
+    "name": "Verve",
+    "type": "Extrait de Parfum",
+    "volume": "50 ml",
+    "variant": "Verve"
+  },
+  "evidence": "User-supplied Shopee listing screenshot and two product photographs, 2026-10-19.",
+  "source_url": "https://s.shopee.co.id/50ZxVeKFNn",
+  "resolved_listing": "https://shopee.co.id/product/146082540/4971698183",
+  "access_limit": "Live listing requires login; no unconfirmed details inferred.",
+  "permission": "User explicitly confirmed permission to use supplied photos and logo for promotion in conversation.",
+  "excluded_claims": [
+    "materials",
+    "fragrance notes",
+    "longevity",
+    "certifications",
+    "prices",
+    "discounts",
+    "ratings",
+    "official Shopee partnership"
+  ],
+  "creative_tagline": {
+    "text": "Hadir. Tanpa banyak kata.",
+    "status": "Original campaign copy; not claimed as an official brand tagline."
+  },
+  "assets": [
+    {
+      "file": "bottle-front-reference.png",
+      "width": 172,
+      "height": 317,
+      "sha256": "3dbecb6d02cf1a8e99ea01388d2f8c6f75284065b8854f3841c048402a2babea",
+      "source": "user-supplied screenshot/photo",
+      "processing": "unaltered reference",
+      "limitation": "Source resolution retained; no synthetic detail added."
+    },
+    {
+      "file": "bottle-front.png",
+      "width": 132,
+      "height": 239,
+      "sha256": "f859044e9b8b1ac5fdd41648a7abc650e8db32c23fdc05ebf4e7decb28f6da70",
+      "source": "user-supplied screenshot/photo",
+      "processing": "crop / alpha silhouette only",
+      "limitation": "Source resolution retained; no synthetic detail added."
+    },
+    {
+      "file": "box-cutout.png",
+      "width": 177,
+      "height": 263,
+      "sha256": "6c4b2c9646d6677cec287225d4cecf45c13b2ba68b607c23a217db29a47065d4",
+      "source": "user-supplied screenshot/photo",
+      "processing": "crop / alpha silhouette only",
+      "limitation": "Source resolution retained; no synthetic detail added."
+    },
+    {
+      "file": "brand-reference.png",
+      "width": 162,
+      "height": 33,
+      "sha256": "921509b76a0d10471d9825edd6f03e40c59cb3f98d6d5ae39ac02c133cee9dc1",
+      "source": "user-supplied screenshot/photo",
+      "processing": "unaltered reference",
+      "limitation": "Source resolution retained; no synthetic detail added."
+    },
+    {
+      "file": "detail-photo.png",
+      "width": 449,
+      "height": 448,
+      "sha256": "1f989dc264cee5595e24dbf2b55ce35559dafdd30f9e395488fbe2a2e859df3b",
+      "source": "user-supplied screenshot/photo",
+      "processing": "crop / alpha silhouette only",
+      "limitation": "Source resolution retained; no synthetic detail added."
+    },
+    {
+      "file": "detail-reference.png",
+      "width": 449,
+      "height": 448,
+      "sha256": "3c37b2373b53b3de11c280c367f73eb805a81837816784a89d551e830e08b2f8",
+      "source": "user-supplied screenshot/photo",
+      "processing": "unaltered reference",
+      "limitation": "Source resolution retained; no synthetic detail added."
+    },
+    {
+      "file": "hero-reference.png",
+      "width": 459,
+      "height": 463,
+      "sha256": "f9a5703accc4495683a14102ae62aeb4baa104c3e8ae2428505f204c9505e1b2",
+      "source": "user-supplied screenshot/photo",
+      "processing": "unaltered reference",
+      "limitation": "Source resolution retained; no synthetic detail added."
+    },
+    {
+      "file": "listing-reference.png",
+      "width": 1339,
+      "height": 681,
+      "sha256": "6daf2c1b51feda274dea3ab136196d3b7d00287e83f14657bda1e84c90d3e950",
+      "source": "user-supplied screenshot/photo",
+      "processing": "unaltered reference",
+      "limitation": "Source resolution retained; no synthetic detail added."
+    },
+    {
+      "file": "packaging-photo.png",
+      "width": 290,
+      "height": 268,
+      "sha256": "0e8cb08deb199f3ec4872bd0347c55df9e56ecb652bebbf5cbbd6a85e5aee13b",
+      "source": "user-supplied screenshot/photo",
+      "processing": "crop / alpha silhouette only",
+      "limitation": "Source resolution retained; no synthetic detail added."
+    }
+  ]
+}

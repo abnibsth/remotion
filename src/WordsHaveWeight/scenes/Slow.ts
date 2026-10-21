@@ -1,0 +1,3 @@
+import {C,appear,dot,line,mt,word} from '../lib/design';
+import {E,lerp,p,slowX} from '../lib/motion';
+export function slow(t:number){const droplet=p(t,11,13.85),touch=E(t,13.75,14),x=slowX(t);return `${appear(mt(100,401,'TAKE YOUR TIME.',25),t,11.15)}<g transform="rotate(${.5*Math.sin((t-11)*.5)} 540 950)">${word('SLOW',x-355,1010,710,C.ink)}</g>${line(100,1110,950,1110,C.ink,1,'opacity=".3"')}${dot(810,lerp(580,850,droplet*droplet),lerp(10,17,touch),C.blue)}${line(810,520,810,lerp(540,810,droplet),C.blue,1,'opacity=".15"')}${mt(100,1355,'LESS SPEED. MORE PRESENCE.',22)}${touch>0?`<ellipse cx="810" cy="848" rx="${15+touch*65}" ry="${6+touch*10}" stroke="${C.blue}" fill="none" opacity="${1-touch*.6}"/>`:''}`;}

@@ -1,0 +1,10 @@
+export const FPS:number,FRAMES:number;
+export const PRODUCT:{brand:string;name:string;type:string;volume:string;variant:string};
+export function clamp(x:number,a?:number,b?:number):number;
+export function mix(a:number,b:number,p:number):number;
+export function smooth(p:number):number;
+export function progress(t:number,a:number,b:number):number;
+export function spring(t:number):number;
+export function sceneAt(t:number):string;
+export function cameraAt(t:number):{x:number;y:number;zoom:number;rotation:number;rotateY:number;depth:number;final:number};
+export function shotAt(t:number):{bottleOpacity:number;detailOpacity:number;packageOpacity:number;light:number;detailPan:number;hero:number;final:number};

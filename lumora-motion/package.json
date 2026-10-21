@@ -1,0 +1,13 @@
+{
+  "name": "lumora-cinematic-showcase",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture": "node capture.mjs && node capture-details.mjs",
+    "test": "node --test motion.test.mjs",
+    "preview": "node render.mjs preview",
+    "keyframes": "node render.mjs keyframes",
+    "render": "node render.mjs render",
+    "verify": "node verify.mjs"
+  }
+}

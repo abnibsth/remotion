@@ -1,0 +1,83 @@
+{
+  "seed": 1202048,
+  "bpm": 120,
+  "sample_rate": 48000,
+  "channels": 2,
+  "samples": 960000,
+  "duration_seconds": 20.0,
+  "encoding": "pcm_s24le",
+  "target_integrated_lufs": -14,
+  "target_true_peak_dbtp": -1.5,
+  "pass1": {
+    "input_i": "-19.53",
+    "input_tp": "-5.75",
+    "input_lra": "2.80",
+    "input_thresh": "-30.11",
+    "output_i": "-14.06",
+    "output_tp": "-1.50",
+    "output_lra": "2.50",
+    "output_thresh": "-24.56",
+    "normalization_type": "dynamic",
+    "target_offset": "0.06"
+  },
+  "pass2": {
+    "input_i": "-19.53",
+    "input_tp": "-5.75",
+    "input_lra": "2.80",
+    "input_thresh": "-30.11",
+    "output_i": "-14.00",
+    "output_tp": "-1.50",
+    "output_lra": "2.50",
+    "output_thresh": "-24.49",
+    "normalization_type": "dynamic",
+    "target_offset": "0.00"
+  },
+  "final_measurement": {
+    "input_i": "-14.05",
+    "input_tp": "-1.56",
+    "input_lra": "2.50",
+    "input_thresh": "-24.63",
+    "output_i": "-13.99",
+    "output_tp": "-1.57",
+    "output_lra": "2.40",
+    "output_thresh": "-24.48",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.01"
+  },
+  "silence_peak_amplitude": 0.0,
+  "click_peak_dbfs": -34.60384750366211,
+  "sha256": "7fe71e0daeaeb4550d1ba06883162702b7af42f6c07f2900c93dd880f6d33b42",
+  "events": {
+    "salary": 0.15,
+    "printer": [
+      2.5,
+      4.4
+    ],
+    "deductions": [
+      5.5,
+      6.75,
+      8
+    ],
+    "transport": 9.75,
+    "other_roll": [
+      11.25,
+      11.9
+    ],
+    "collapse": 12.5,
+    "silence": [
+      13,
+      16
+    ],
+    "quiet_click": 14.7,
+    "bass_return": 16,
+    "fold": [
+      16.4,
+      17.1
+    ],
+    "typography": 17.25,
+    "resolution_fade": [
+      18.5,
+      20
+    ]
+  }
+}

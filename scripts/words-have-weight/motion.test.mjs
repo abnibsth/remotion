@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {build} from 'esbuild';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const outfile=path.resolve('.cache/words-have-weight-tests/motion.mjs');
+await build({entryPoints:['src/WordsHaveWeight/lib/motion.ts'],outfile,bundle:true,platform:'node',format:'esm'});
+const m=await import(pathToFileURL(outfile));
+test('20 seconds contains 1200 frame states and seven named beats',()=>{assert.equal(m.FPS*m.DURATION,1200);assert.equal(m.BEATS.length,7);});
+test('heavy accelerates down to impact and settles at floor',()=>{assert.ok(m.heavyState(.55).y<m.heavyState(.7).y);assert.ok(Math.abs(m.heavyState(4).y-1130)<1);assert.ok(m.heavyState(.75).sy<1);});
+test('light drifts upward with restrained independent letter offsets',()=>{assert.ok(m.lightState(7).y<m.lightState(5.4).y);for(let i=0;i<5;i++)assert.ok(Math.abs(m.lightState(6.5,i).rotation)<3);});
+test('fast speeds up strongly before braking',()=>{const v=t=>(m.fastX(t+.001)-m.fastX(t-.001))/.002;assert.ok(Math.abs(v(8.6))>Math.abs(v(8.2))*2);assert.ok(Math.abs(v(10.8))<Math.abs(v(8.6)));});
+test('slow remains subpixel-smooth with much smaller displacement than fast',()=>{assert.ok(Math.abs(m.slowX(12.51)-m.slowX(12.5))<1);assert.ok(Math.abs(m.slowX(13)-m.slowX(12))<80);});
+test('elastic stretches and snaps with decaying closed form recovery',()=>{assert.ok(m.elasticState(15).stretch>1.3);assert.ok(Math.abs(m.elasticState(16.6).stretch-1)<.02);assert.equal(m.elasticState(15.8).stretch,m.elasticState(15.8).stretch);});
+test('deformation is volume-aware and all states are finite regardless of seek order',()=>{const a=m.heavyState(1);m.heavyState(4);m.heavyState(.1);assert.deepEqual(m.heavyState(1),a);for(let i=0;i<1200;i++){const t=i/60;for(const v of Object.values(m.heavyState(t)))assert.ok(Number.isFinite(v));assert.ok(Math.abs(m.elasticState(t).stretch*m.elasticState(t).sy-1)<1e-9);}});

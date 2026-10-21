@@ -1,5 +1,7 @@
 
 
+
+
 ---
 name: "pop-cinematic-motion"
 description: "Use when making a promo, ad or social reel video from code that should look like a polished, cinematic comic-pop motion design piece rather than flat motion graphics."
@@ -19,7 +21,7 @@ Use together with: `spring-motion` (all motion = closed-form springs) and `motio
 
 ## 2. Design tokens (swap per brand, keep the structure)
 ```
-NAVY #141235  NAVY2 #23205A  NAVY3 #34307A   (deep background family)
+NAVY #141235  NAVY2 #464296  NAVY3 #34307A   (deep background family)
 OUT  #17132E  (outline – deep violet-navy, never pure black)
 CREAM #F7EEDB (paper / light text)
 BRAND #FFD21F  BRAND2 #F2A516 (accent + its shade)
