@@ -1,6 +1,5 @@
-<<<<<<< HEAD
+import { ScienceOfDownforce } from "./Downforce";
 import { Petir } from "./Petir";
-=======
 import { WordsHaveWeight } from "./WordsHaveWeight";
 import { ClickALink } from "./ClickALink";
 import { MotionCardListicle } from "./MotionCardListicle";
@@ -11,7 +10,6 @@ import { AbniBanner } from "./AbniBanner";
 import { MotionShowreel, Opening as ShowreelOpening, Shapes as ShowreelShapes, Typography as ShowreelTypography, Dimension as ShowreelDimension, Chaos as ShowreelChaos, Finale as ShowreelFinale } from "./Showreel";
 import { SejukSigap } from "./Sejuk";
 import { NotifikasiOverload, HookScene, ComingScene, ChaosScene, BreakdownScene, SilenceScene, SolutionScene, PayoffScene } from "./Notifikasi";
->>>>>>> dfee7462db3d5be353421ef7b2752498c852f98f
 import { LumoraLaunch } from "./Lumora";
 import { GajianV2, GajianV2Prototype } from "./GajianV2";
 import { Gajian, SalaryScene, SultanScene, RealityScene, BalanceScene, SilenceScene as GajianSilenceScene, WaitingScene } from "./Gajian";
@@ -26,10 +24,10 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-<<<<<<< HEAD
+      <Composition id="ScienceOfDownforce" component={ScienceOfDownforce} durationInFrames={1800} fps={60} width={1080} height={1920} />
+      <Composition id="DownforcePrototype" component={ScienceOfDownforce} durationInFrames={600} fps={60} width={1080} height={1920} />
       <Composition id="KenapaPetirBisaMuncul" component={Petir} durationInFrames={1800} fps={60} width={1080} height={1920} />
       <Composition id="PetirPrototype" component={Petir} durationInFrames={600} fps={60} width={1080} height={1920} />
-=======
       <Composition id="WordsHaveWeight" component={WordsHaveWeight} durationInFrames={1200} fps={60} width={1080} height={1920} />
       <Composition id="WordsHaveWeightPrototype" component={WordsHaveWeight} durationInFrames={480} fps={60} width={1080} height={1920} />
       <Composition id="ClickALink" component={ClickALink} durationInFrames={1800} fps={60} width={1920} height={1080} />
@@ -77,7 +75,6 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="Notifikasi-Solution" component={SolutionScene} durationInFrames={75} fps={30} width={1080} height={1920} />
         <Composition id="Notifikasi-Payoff" component={PayoffScene} durationInFrames={60} fps={30} width={1080} height={1920} />
       </Folder>
->>>>>>> dfee7462db3d5be353421ef7b2752498c852f98f
       <Composition id="DreamDungeon" component={DreamDungeon} durationInFrames={2400} fps={60} width={1080} height={1920} />
       <Folder name="Dream-Dungeon-Scenes">
         <Composition id="Dream-Bedroom" component={Bedroom} durationInFrames={510} fps={60} width={1080} height={1920} />

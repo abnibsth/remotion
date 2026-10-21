@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {build} from 'esbuild';import path from 'node:path';import {pathToFileURL} from 'node:url';const file=path.resolve('.cache/downforce-tests/motion.mjs');await build({entryPoints:['src/Downforce/motion.ts'],outfile:file,bundle:true,platform:'node',format:'esm'});const m=await import(pathToFileURL(file));
+test('30 seconds at 60fps has 1800 states',()=>assert.equal(m.FPS*m.DURATION,1800));
+test('camera follows continuous keyframe route without jumps',()=>{for(let i=1;i<1800;i++){const a=m.camera((i-1)/60),b=m.camera(i/60);assert.ok(Math.hypot(...b.pos.map((v,j)=>v-a.pos[j]))<.2);assert.ok(b.pos.every(Number.isFinite));}});
+test('upper airflow clears the vehicle envelope and travels front to rear',()=>{for(let i=0;i<9;i++)for(let p=0;p<=1;p+=.05){const v=m.flowPoint(p,i,'upper');assert.ok(v.y>1.5||Math.abs(v.z)>1.18||Math.abs(v.x)>2.8);}assert.ok(m.flowPoint(0,0,'upper').x<m.flowPoint(1,0,'upper').x);});
+test('underfloor lines stay in road-to-floor clearance',()=>{for(let p=0;p<=1;p+=.02){const v=m.flowPoint(p,0,'under');assert.ok(v.y>.02&&v.y<.4);assert.ok(Math.abs(v.z)<.9);}});
+test('camera and flow are identical regardless of seek order',()=>{const a=m.camera(16.3);m.camera(29);m.camera(1);assert.deepEqual(m.camera(16.3),a);});
+test('pressure overlays and education stages are time bounded',()=>{assert.equal(m.stage(8),'wing');assert.equal(m.stage(15),'floor');assert.equal(m.stage(22),'grip');assert.equal(m.stage(28),'track');});
