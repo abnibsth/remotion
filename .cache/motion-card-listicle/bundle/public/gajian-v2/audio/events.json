@@ -1,0 +1,127 @@
+[
+  {
+    "time": 0,
+    "sample": 0,
+    "name": "salary-impact"
+  },
+  {
+    "time": 0.35,
+    "sample": 16800,
+    "name": "phone-slide"
+  },
+  {
+    "time": 0.8,
+    "sample": 38400,
+    "name": "catch"
+  },
+  {
+    "time": 1.5,
+    "sample": 72000,
+    "name": "elastic-landing"
+  },
+  {
+    "time": 2.4,
+    "sample": 115200,
+    "name": "headline-expansion"
+  },
+  {
+    "time": 3.1,
+    "sample": 148800,
+    "name": "number-to-money"
+  },
+  {
+    "time": 4.5,
+    "sample": 216000,
+    "name": "surf-swish"
+  },
+  {
+    "time": 6.6,
+    "sample": 316800,
+    "name": "anticipation"
+  },
+  {
+    "time": 7.1,
+    "sample": 340800,
+    "name": "tagihan-collision"
+  },
+  {
+    "time": 8,
+    "sample": 384000,
+    "name": "kos"
+  },
+  {
+    "time": 9.25,
+    "sample": 444000,
+    "name": "makan"
+  },
+  {
+    "time": 10.5,
+    "sample": 504000,
+    "name": "cicilan"
+  },
+  {
+    "time": 11.75,
+    "sample": 564000,
+    "name": "transport"
+  },
+  {
+    "time": 13.4,
+    "sample": 643200,
+    "name": "numerical-deduction"
+  },
+  {
+    "time": 14.35,
+    "sample": 688800,
+    "name": "numerical-deduction"
+  },
+  {
+    "time": 15.3,
+    "sample": 734400,
+    "name": "numerical-deduction"
+  },
+  {
+    "time": 16.25,
+    "sample": 780000,
+    "name": "numerical-deduction"
+  },
+  {
+    "time": 17.3,
+    "sample": 830400,
+    "name": "numerical-deduction"
+  },
+  {
+    "time": 18.7,
+    "sample": 897600,
+    "name": "last-digits-collapse"
+  },
+  {
+    "time": 24,
+    "sample": 1152000,
+    "name": "calendar-glance"
+  },
+  {
+    "time": 24.8,
+    "sample": 1190400,
+    "name": "calendar-expands"
+  },
+  {
+    "time": 25.6,
+    "sample": 1228800,
+    "name": "wallet-fold"
+  },
+  {
+    "time": 26.6,
+    "sample": 1276800,
+    "name": "character-falls"
+  },
+  {
+    "time": 27.8,
+    "sample": 1334400,
+    "name": "punchline-settle"
+  },
+  {
+    "time": 28.35,
+    "sample": 1360800,
+    "name": "relate-elastic"
+  }
+]

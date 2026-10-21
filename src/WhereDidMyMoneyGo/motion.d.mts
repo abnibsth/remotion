@@ -1,0 +1,15 @@
+export type Point = [number, number];
+export const FINANCE: {initial:number; expenses:{label:string;amount:number}[]};
+export const EVENTS: {deductions:number[];collapse:number;silence:number;fold:number;title:number};
+export function clamp(v:number,a?:number,b?:number):number;
+export function mix(a:number,b:number,p:number):number;
+export function smooth(p:number):number;
+export function progress(t:number,a:number,b:number):number;
+export function spring(t:number,frequency?:number,damping?:number):number;
+export function formatIDR(n:number):string;
+export function balanceAt(t:number):number;
+export function cameraAt(t:number):{x:number;y:number;zoom:number;rotation:number;perspective:number};
+export function receiptPoints(width:number,height:number,curve?:number,tooth?:number):Point[];
+export function morphPoints(a:Point[],b:Point[],p:number):Point[];
+export function pathFromPoints(points:Point[]):string;
+export function surfaceAt(t:number):{path:string;x:number;y:number;opacity:number;red:number;fold:number};

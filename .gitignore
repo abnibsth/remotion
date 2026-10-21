@@ -4,6 +4,25 @@ dist
 .env
 .env.local
 .cache/dream-voice/
+.cache/notifikasi-preview/
+.cache/gajian-preview/
+.cache/gajian-v2/
+.cache/everything-is-motion/
+.cache/everything-tests/
+.cache/money/
+.cache/verve/
+public/product-commercial/verve/*.wav
+.firecrawl/
+public/money/audio/*.wav
+public/money/audio/*.log
+gajian-motion/v2/output/
+public/gajian-v2/audio/*.wav
+gajian-motion/output/
+public/gajian/audio/*.wav
+public/gajian/audio/normalization.log
+public/sejuk/audio/*.wav
+public/sejuk/audio/*.log
+/build/
 
 # Ignore the output video from Git but not videos you import into src/.
 out

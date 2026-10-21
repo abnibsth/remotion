@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {build} from 'esbuild';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const outfile=path.resolve('.cache/motion-card-listicle-tests/film.mjs');
+await build({entryPoints:['src/MotionCardListicle/lib/film.ts'],outfile,bundle:true,platform:'node',format:'esm'});
+const {svgAt}=await import(pathToFileURL(outfile));
+test('every exported frame has finite valid SVG geometry',()=>{for(let frame=0;frame<1500;frame++){const svg=svgAt(frame/60);assert.ok(svg.startsWith('<svg'));assert.ok(svg.endsWith('</svg>'));assert.ok(!/NaN|Infinity|undefined/.test(svg),`Invalid frame ${frame}`);}});
+test('each principle uses the requested short educational explanation',()=>{for(const [t,copy]of[[4,'Movement needs rhythm.'],[8,'Prepare before the action.'],[12,'Give shapes weight.'],[16,'Let motion continue.'],[20,'Every frame matters.']])assert.ok(svgAt(t).includes(copy));});
+test('final composition contains the exact takeaway and no invented creator credit',()=>{const s=svgAt(1499/60);assert.ok(s.includes('GOOD MOTION'));assert.ok(s.includes('INTENTIONAL.'));assert.ok(s.includes('5 PRINCIPLES. ENDLESS POSSIBILITIES.'));assert.ok(!/created by|@abni|copyright/i.test(s));});
+test('out-of-order visual evaluations are byte-identical',()=>{const s=svgAt(12.37);svgAt(24.99);svgAt(.2);svgAt(7.1);assert.equal(svgAt(12.37),s);});

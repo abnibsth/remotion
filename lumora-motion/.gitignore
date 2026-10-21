@@ -1,0 +1,6 @@
+tooling/node_modules/
+output/chunk-*.mp4
+output/concat.txt
+output/decoded-*.png
+output/seek-*.png
+output/seek-*.txt

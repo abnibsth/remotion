@@ -1,0 +1,16 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {build} from 'esbuild';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+import fs from 'node:fs/promises';
+const outfile=path.resolve('.cache/words-have-weight-tests/film.mjs');
+await build({entryPoints:['src/WordsHaveWeight/lib/film.ts'],outfile,bundle:true,platform:'node',format:'esm'});
+const {svgAt}=await import(pathToFileURL(outfile));
+test('all 1200 frames have finite SVG geometry and required visual envelope',()=>{for(let i=0;i<1200;i++){const s=svgAt(i/60);assert.ok(s.startsWith('<svg'));assert.ok(s.endsWith('</svg>'));assert.ok(!/NaN|Infinity|undefined/.test(s),`Invalid frame ${i}`);}});
+test('all five words occur in their physical demonstration windows',()=>{for(const[t,s]of[[3,'HEAVY'],[6.5,'LIGHT'],[9.5,'FAST'],[12.5,'SLOW'],[15.5,'ELASTIC']])assert.ok(svgAt(t).includes(s));});
+test('heavy and elastic use true font outline paths, light uses thin live font',()=>{assert.ok(svgAt(3).includes('data-word="HEAVY"'));assert.ok(svgAt(15).includes('data-word="ELASTIC"'));assert.ok(svgAt(6).includes('font-weight="300"'));});
+test('hook and final carry required copy',()=>{const hook=svgAt(1.8);assert.ok(hook.includes('WHAT IF WORDS...'));assert.ok(hook.includes('PHYSICS?'));const end=svgAt(19.9);for(const s of ['WORDS','HAVE','WEIGHT.','MOTION GIVES','THEM MEANING.'])assert.ok(end.includes(s));});
+test('vector geometry is sourced from real glyphs with consistent metrics',async()=>{const data=JSON.parse(await fs.readFile('src/WordsHaveWeight/lib/outlines.json','utf8'));for(const [name,o]of Object.entries(data)){assert.ok(o.width>1000);assert.ok(o.capHeight>0);assert.equal(o.glyphs.length,name.length);assert.ok(o.glyphs.every(g=>g.path.length>10&&g.advance>0));}});
+test('top and bottom editorial chrome is absent throughout the film',()=>{for(let i=0;i<1200;i++){const s=svgAt(i/60);for(const label of ['VOL. 01','60 FPS','01 / MASS','02 / BUOYANCY','03 / VELOCITY','04 / TIME','05 / TENSION','A TYPOGRAPHIC EXPERIMENT'])assert.ok(!s.includes(label),`Chrome ${label} at frame ${i}`);assert.ok(!s.includes('y="167"'));assert.ok(!s.includes('y="1497"'));}});
+test('visual states are order-independent',()=>{for(const t of [.71,1.1,4.95,7.9,10.8,13.95,15.3,16.9,19.9]){const before=svgAt(t);svgAt(20-t);svgAt(0);assert.equal(svgAt(t),before);}});

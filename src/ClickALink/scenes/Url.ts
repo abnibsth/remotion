@@ -1,0 +1,5 @@
+import {C,appear,badge,heading,line,mt,rect,tx} from '../lib/design';
+import {E,lerp} from '../lib/motion';
+export function urlScene(t:number){const split=E(t,.2,1),focus=E(t,2.1,3);const a=lerp(365,270,split),b=lerp(667,710,split),c=lerp(1140,1320,split);
+ return `${heading(t,2,'THE URL','An address with distinct parts.')}${line(350,600,1570,600,C.cyan,3,`opacity="${1-E(t,0,.45)}"`)}<g opacity="${1-focus}">${rect(a-25,489,330,120,C.mid,12)}${rect(c-25,489,280,120,C.mid,12)}${tx(a,567,'https://',61,C.blue,`font-family="'IBM Plex Mono'"`)}${tx(c,567,'/page',61,C.white,`font-family="'IBM Plex Mono'"`)}</g><g transform="translate(${lerp(0,960-(b+180),focus)} ${lerp(0,60,focus)})">${rect(b-30,489,480,120,C.mid,12,`stroke="${C.cyan}" stroke-width="2"`)}${tx(b,567,'example.com',61,C.cyan,`font-family="'IBM Plex Mono'"`)}</g><g opacity="${split*(1-focus)}">${mt(a,671,'PROTOCOL',23,C.blue)}${mt(b,671,'HOSTNAME',23,C.cyan)}${mt(c,671,'PATH',23,C.white)}${mt(a,718,'Secure HTTPS scheme',19,C.slate)}${mt(b,718,'Used for address lookup',19,C.slate)}${mt(c,718,'Resource on the service',19,C.slate)}</g>${appear(badge(105,858,'NEXT: RESOLVE THE HOSTNAME'),t,1.6)}`;
+}

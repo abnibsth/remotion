@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {build} from 'esbuild';
+import {pathToFileURL} from 'node:url';
+import path from 'node:path';
+const outfile=path.resolve('.cache/click-a-link-tests/film.mjs');
+await build({entryPoints:['src/ClickALink/lib/film.ts'],outfile,bundle:true,platform:'node',format:'esm'});
+const {svgAt}=await import(pathToFileURL(outfile));
+test('all 1800 frames have finite geometry, SVG envelope, no missing state',()=>{for(let i=0;i<1800;i++){const s=svgAt(i/60);assert.ok(s.startsWith('<svg'));assert.ok(s.endsWith('</svg>'));assert.ok(!/NaN|Infinity|undefined/.test(s),`Invalid frame ${i}`);}});
+test('rendered frames are identical after arbitrary timestamp order',()=>{for(const t of [.7,5.9,9.99,12.34,17.9,21.9,24.2,29.9]){const a=svgAt(t);svgAt(29-t);svgAt(3);assert.equal(svgAt(t),a);}});
+test('DNS returns documentation address, not HTML',()=>{const s=svgAt(8.8);assert.ok(s.includes('203.0.113.10'));assert.ok(s.includes('DNS RESOLVER'));assert.ok(s.includes('Not fetching a webpage.'));assert.ok(!s.includes('200 OK'));assert.ok(s.includes('CACHE MAY SKIP THIS STEP'));});
+test('secure channel identifies illustrative HTTP2 TCP and TLS without HTTP3 misinformation',()=>{const s=svgAt(12.8);assert.ok(s.includes('HTTP/2 · TCP + TLS'));assert.ok(s.includes('CONNECTIONS MAY BE REUSED'));assert.ok(s.includes('ENCRYPTED'));assert.ok(!s.includes('HTTP/3'));});
+test('request and response retain correct illustrative semantics',()=>{assert.ok(svgAt(15).includes('GET /page'));assert.ok(svgAt(15).includes('SIMPLIFIED HTTP/2 REQUEST'));assert.ok(svgAt(15).includes('CDN or proxy'));assert.ok(svgAt(20).includes('EXAMPLE SUCCESS RESPONSE'));assert.ok(svgAt(21.8).includes('SEPARATE REQUESTS'));});
+test('rendering is progressively visible and notes resources can still load',()=>{const s=svgAt(24.2);for(const v of ['PARSE','STYLE','LAYOUT','PAINT','COMPOSITE'])assert.ok(s.includes(v));assert.ok(s.includes('CONTENT CAN APPEAR WHILE RESOURCES LOAD'));});
+test('all scenes label scope and contain no fabricated latency values',()=>{for(const t of [1,4,8,12,16,20,24,29]){const s=svgAt(t);assert.ok(s.includes('SIMPLIFIED HTTPS NAVIGATION'));assert.ok(!/\b\d+\s?ms\b|instant|always takes/i.test(s));}});

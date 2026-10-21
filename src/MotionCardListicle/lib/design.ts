@@ -1,0 +1,16 @@
+import {clamp, progress, spring} from './motion';
+export const C={ivory:'#F4F0E7',ink:'#202020',red:'#F36B4D',blue:'#3158E7',lime:'#D8EE86',pale:'#C7DAF6'};
+export const FONT="'Space Grotesk',sans-serif";
+export const MONO="'IBM Plex Mono',monospace";
+export const escape=(s:string)=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+export const text=(x:number,y:number,s:string,size=32,fill:string=C.ink,extra='')=>`<text x="${x}" y="${y}" font-size="${size}" fill="${fill}" ${extra}>${escape(s)}</text>`;
+export const mono=(x:number,y:number,s:string,size=22,fill:string=C.ink,extra='')=>text(x,y,s,size,fill,`font-family="${MONO}" font-weight="500" letter-spacing="1.2" ${extra}`);
+export const rule=(x1:number,y1:number,x2:number,y2:number,color:string=C.ink,opacity=.25)=>`<path d="M${x1} ${y1}H${x2}" transform="${y1===y2?'':`rotate(${Math.atan2(y2-y1,x2-x1)*180/Math.PI} ${x1} ${y1})`}" stroke="${color}" stroke-width="2" opacity="${opacity}"/>`;
+export const dot=(x:number,y:number,r:number,fill:string=C.ink,extra='')=>`<circle cx="${x}" cy="${y}" r="${Math.max(0,r)}" fill="${fill}" ${extra}/>`;
+export function reveal(content:string,t:number,start:number,id:string){const p=clamp(spring(t-start));return `<g opacity="${t<start?0:1}" clip-path="url(#${id})"><g transform="translate(0 ${90*(1-p)})">${content}</g></g>`;}
+export const card=(fill:string,content:string,extra='')=>`<g ${extra}><rect x="120" y="350" width="840" height="1130" rx="18" fill="${fill}" stroke="${C.ink}" stroke-width="2" filter="url(#paperShadow)"/>${content}</g>`;
+export function header(n:number,name:string[],desc:string,fill:string,ink:string=C.ink){return `${mono(176,409,'PRINCIPLE / 0'+n,21,ink)}${text(171,595,'0'+n,184,ink,'letter-spacing="-14"')}<path d="M430 445V590" stroke="${ink}" stroke-width="2" opacity=".3"/>${mono(475,479,'DESIGN',19,ink)}${mono(475,509,'IN MOTION',19,ink)}${dot(870,475,19,ink)}${name.map((s,i)=>text(174,680+i*76,s, name.length>1?64:76,ink,'letter-spacing="-3"')).join('')}${text(177,name.length>1?815:741,desc,29,ink,'font-family="Inter,sans-serif" font-weight="500"')}${rule(176,name.length>1?852:785,904,name.length>1?852:785,ink)}${mono(176,1425,'THE CARDS TEACH THROUGH MOVEMENT',17,ink)}${mono(904,1425,'0'+n,20,ink,'text-anchor="end"')}`;}
+export const rail=(y:number,label:string,ink:string=C.ink)=>`${mono(177,y-48,label,22,ink)}<path d="M226 ${y}H854" fill="none" stroke="${ink}" stroke-width="2" opacity=".23"/>${dot(226,y,7,ink)}${dot(854,y,7,ink)}`;
+export function shell(t:number,content:string){const step=t<2.5?0:Math.min(5,1+Math.floor((t-2.5)/4));return `${mono(96,161,'DESIGN IN MOTION / VOL. 01',23)}${mono(984,161,'60 FPS',21,C.ink,'text-anchor="end"')}${rule(96,193,984,193)}${content}${mono(96,1627,'A STUDY IN INTENTION',21)}${mono(984,1627,t<22.5?'0'+step+' / 05':'05 / 05',21,C.ink,'text-anchor="end"')}<g>${[0,1,2,3,4].map(i=>`<rect x="${96+i*180}" y="1662" width="166" height="4" rx="2" fill="${C.ink}" opacity="${step>i?1:.14}"/>`).join('')}</g>`;}
+export const footer=(left:string,right:string,ink:string=C.ink)=>`${mono(176,1345,left,21,ink)}${mono(904,1345,right,21,ink,'text-anchor="end"')}`;
+export const fadeContent=(t:number,start=0)=>clamp(progress(t,start,start+.3));

@@ -1,0 +1,53 @@
+{
+  "allScenesRandomSeekPixelIdentical": true,
+  "times": [
+    1.9,
+    5.8,
+    10.4,
+    15.6,
+    17.45,
+    21.65,
+    25.4,
+    29
+  ],
+  "headlineOverflow": [],
+  "browserErrors": [],
+  "transitions": [
+    {
+      "time": 4,
+      "left": 0,
+      "right": 1920,
+      "fullCover": true
+    },
+    {
+      "time": 8,
+      "left": 0,
+      "right": 1920,
+      "fullCover": true
+    },
+    {
+      "time": 13,
+      "left": 0,
+      "right": 1920,
+      "fullCover": true
+    },
+    {
+      "time": 18,
+      "left": 0,
+      "right": 1920,
+      "fullCover": true
+    },
+    {
+      "time": 23,
+      "left": 0,
+      "right": 1920,
+      "fullCover": true
+    },
+    {
+      "time": 27,
+      "left": 0,
+      "right": 1920,
+      "fullCover": true
+    }
+  ]
+}

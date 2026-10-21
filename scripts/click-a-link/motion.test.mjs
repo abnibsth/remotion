@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {build} from 'esbuild';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const outfile=path.resolve('.cache/click-a-link-tests/engine.mjs');
+await build({entryPoints:['src/ClickALink/lib/motion.ts'],outfile,bundle:true,platform:'node',format:'esm'});
+const m=await import(pathToFileURL(outfile));
+test('timeline covers exactly 1800 frames without gaps or overlap',()=>{assert.equal(m.DURATION*m.FPS,1800);for(let i=0;i<1800;i++){const s=m.sceneAt(i/60);assert.ok(i/60>=s.start&&i/60<s.end);}assert.equal(m.SCENES.length,8);});
+test('easing and closed-form spring endpoints are deterministic',()=>{assert.equal(m.ease(0),0);assert.equal(m.ease(1),1);assert.equal(m.spring(0),0);assert.ok(Math.abs(m.spring(3)-1)<.001);assert.equal(m.spring(.8),m.spring(.8));});
+test('request moves browser to service and response moves service to browser',()=>{assert.ok(m.requestProgress(15)<m.requestProgress(16));assert.ok(m.responseProgress(19)<m.responseProgress(20));assert.ok(m.routePoint(m.requestProgress(15)).x<m.routePoint(m.requestProgress(16)).x);assert.ok(m.routePoint(1-m.responseProgress(19)).x>m.routePoint(1-m.responseProgress(20)).x);});
+test('lock appears only after TLS completion',()=>{assert.equal(m.channelSecure(11.9),false);assert.equal(m.channelSecure(12.4),true);});
+test('page appears before last resource finishes',()=>{assert.ok(m.pageState(24.1).paint>0);assert.ok(m.pageState(24.1).image<1);assert.equal(m.pageState(26.8).image,1);});
+test('camera has finite absolute-time transforms across all 1800 frames',()=>{for(let i=0;i<1800;i++){const c=m.camera(i/60);assert.ok(Object.values(c).every(Number.isFinite));assert.ok(c.zoom>=.85&&c.zoom<=1.12);}});
+test('path interpolation preserves endpoints and exact state after random seeks',()=>{const a=m.routePoint(.3);m.routePoint(.9);m.routePoint(0);assert.deepEqual(a,m.routePoint(.3));assert.equal(m.routePoint(0).x,380);assert.equal(m.routePoint(1).x,1540);});

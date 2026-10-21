@@ -1,5 +1,20 @@
+<<<<<<< HEAD
 import { Petir } from "./Petir";
+=======
+import { WordsHaveWeight } from "./WordsHaveWeight";
+import { ClickALink } from "./ClickALink";
+import { MotionCardListicle } from "./MotionCardListicle";
+import { VerveCommercial } from "./Verve";
+import { WhereDidMyMoneyGo } from "./WhereDidMyMoneyGo";
+import { EverythingIsMotion } from "./EverythingIsMotion";
+import { AbniBanner } from "./AbniBanner";
+import { MotionShowreel, Opening as ShowreelOpening, Shapes as ShowreelShapes, Typography as ShowreelTypography, Dimension as ShowreelDimension, Chaos as ShowreelChaos, Finale as ShowreelFinale } from "./Showreel";
+import { SejukSigap } from "./Sejuk";
+import { NotifikasiOverload, HookScene, ComingScene, ChaosScene, BreakdownScene, SilenceScene, SolutionScene, PayoffScene } from "./Notifikasi";
+>>>>>>> dfee7462db3d5be353421ef7b2752498c852f98f
 import { LumoraLaunch } from "./Lumora";
+import { GajianV2, GajianV2Prototype } from "./GajianV2";
+import { Gajian, SalaryScene, SultanScene, RealityScene, BalanceScene, SilenceScene as GajianSilenceScene, WaitingScene } from "./Gajian";
 import { DreamDungeon, Bedroom, Arrival, Meeting, RemSleep, Victory } from "./DreamDungeon";
 import { Composition, Folder } from "remotion";
 import { HelloWorld } from "./HelloWorld";
@@ -11,8 +26,58 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+<<<<<<< HEAD
       <Composition id="KenapaPetirBisaMuncul" component={Petir} durationInFrames={1800} fps={60} width={1080} height={1920} />
       <Composition id="PetirPrototype" component={Petir} durationInFrames={600} fps={60} width={1080} height={1920} />
+=======
+      <Composition id="WordsHaveWeight" component={WordsHaveWeight} durationInFrames={1200} fps={60} width={1080} height={1920} />
+      <Composition id="WordsHaveWeightPrototype" component={WordsHaveWeight} durationInFrames={480} fps={60} width={1080} height={1920} />
+      <Composition id="ClickALink" component={ClickALink} durationInFrames={1800} fps={60} width={1920} height={1080} />
+      <Composition id="ClickALinkPrototype" component={ClickALink} durationInFrames={600} fps={60} width={1920} height={1080} />
+      <Composition id="MotionCardListicle" component={MotionCardListicle} durationInFrames={1500} fps={60} width={1080} height={1920} />
+      <Composition id="MotionCardListiclePrototype" component={MotionCardListicle} durationInFrames={390} fps={60} width={1080} height={1920} />
+      <Composition id="VerveCommercial" component={VerveCommercial} durationInFrames={1200} fps={60} width={1920} height={1080} />
+      <Composition id="VervePrototype" component={VerveCommercial} durationInFrames={420} fps={60} width={1920} height={1080} />
+      <Composition id="WhereDidMyMoneyGoVO" component={WhereDidMyMoneyGo} durationInFrames={1200} fps={60} width={1920} height={1080} defaultProps={{narrated:true}} />
+      <Composition id="WhereDidMyMoneyGo" component={WhereDidMyMoneyGo} durationInFrames={1200} fps={60} width={1920} height={1080} />
+      <Composition id="WhereDidMyMoneyGoPrototype" component={WhereDidMyMoneyGo} durationInFrames={300} fps={60} width={1920} height={1080} />
+      <Composition id="EverythingIsMotion" component={EverythingIsMotion} durationInFrames={1200} fps={60} width={1920} height={1080} />
+      <Composition id="EverythingIsMotionPrototype" component={EverythingIsMotion} durationInFrames={360} fps={60} width={1920} height={1080} />
+      <Composition id="AbniGithubBanner" component={AbniBanner} durationInFrames={240} fps={30} width={1280} height={360} />
+      <Composition id="AbniGithubMaster" component={AbniBanner} durationInFrames={240} fps={30} width={2560} height={720} />
+      <Composition id="MotionShowreel" component={MotionShowreel} durationInFrames={900} fps={60} width={1920} height={1080} />
+      <Folder name="Showreel-Scenes">
+        <Composition id="Showreel-Opening" component={ShowreelOpening} durationInFrames={120} fps={60} width={1920} height={1080} />
+        <Composition id="Showreel-Shapes" component={ShowreelShapes} durationInFrames={150} fps={60} width={1920} height={1080} />
+        <Composition id="Showreel-Typography" component={ShowreelTypography} durationInFrames={150} fps={60} width={1920} height={1080} />
+        <Composition id="Showreel-Dimension" component={ShowreelDimension} durationInFrames={180} fps={60} width={1920} height={1080} />
+        <Composition id="Showreel-Chaos" component={ShowreelChaos} durationInFrames={150} fps={60} width={1920} height={1080} />
+        <Composition id="Showreel-Finale" component={ShowreelFinale} durationInFrames={150} fps={60} width={1920} height={1080} />
+      </Folder>
+      <Composition id="SejukSigap" component={SejukSigap} durationInFrames={870} fps={30} width={1080} height={1920} />
+      <Composition id="GajianV2" component={GajianV2} durationInFrames={900} fps={30} width={1080} height={1920} />
+      <Composition id="GajianV2Prototype" component={GajianV2Prototype} durationInFrames={210} fps={30} width={1080} height={1920} />
+      <Composition id="Gajian" component={Gajian} durationInFrames={900} fps={30} width={1080} height={1920} />
+      <Folder name="Gajian-Scenes">
+        <Composition id="Gajian-Salary" component={SalaryScene} durationInFrames={120} fps={30} width={1080} height={1920} />
+        <Composition id="Gajian-Sultan" component={SultanScene} durationInFrames={120} fps={30} width={1080} height={1920} />
+        <Composition id="Gajian-Reality" component={RealityScene} durationInFrames={180} fps={30} width={1080} height={1920} />
+        <Composition id="Gajian-Balance" component={BalanceScene} durationInFrames={180} fps={30} width={1080} height={1920} />
+        <Composition id="Gajian-Silence" component={GajianSilenceScene} durationInFrames={150} fps={30} width={1080} height={1920} />
+        <Composition id="Gajian-Waiting" component={WaitingScene} durationInFrames={150} fps={30} width={1080} height={1920} />
+      </Folder>
+      <Composition id="NotifikasiOverload" component={NotifikasiOverload} durationInFrames={600} fps={30} width={1080} height={1920} />
+      <Composition id="NotifikasiOverload60" component={NotifikasiOverload} durationInFrames={1200} fps={60} width={1080} height={1920} />
+      <Folder name="Notifikasi-Scenes">
+        <Composition id="Notifikasi-Hook" component={HookScene} durationInFrames={75} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Coming" component={ComingScene} durationInFrames={90} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Chaos" component={ChaosScene} durationInFrames={120} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Breakdown" component={BreakdownScene} durationInFrames={90} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Silence" component={SilenceScene} durationInFrames={90} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Solution" component={SolutionScene} durationInFrames={75} fps={30} width={1080} height={1920} />
+        <Composition id="Notifikasi-Payoff" component={PayoffScene} durationInFrames={60} fps={30} width={1080} height={1920} />
+      </Folder>
+>>>>>>> dfee7462db3d5be353421ef7b2752498c852f98f
       <Composition id="DreamDungeon" component={DreamDungeon} durationInFrames={2400} fps={60} width={1080} height={1920} />
       <Folder name="Dream-Dungeon-Scenes">
         <Composition id="Dream-Bedroom" component={Bedroom} durationInFrames={510} fps={60} width={1080} height={1920} />
