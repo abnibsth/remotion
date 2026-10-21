@@ -6,6 +6,9 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@fontsource/space-grotesk": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/ibm-plex-mono": "5.3.0",
     "@remotion/cli": "4.0.534",
     "@remotion/media": "4.0.534",
     "@remotion/transitions": "4.0.534",
@@ -16,6 +19,8 @@
     "zod": "4.5.4"
   },
   "devDependencies": {
+    "esbuild": "0.28.1",
+    "playwright-core": "1.64.1",
     "@remotion/eslint-config-flat": "4.0.534",
     "@types/react": "19.2.7",
     "@types/web": "0.0.166",
@@ -25,6 +30,14 @@
   },
   "scripts": {
     "dev": "remotion studio",
+    "petir:test": "node --test scripts/petir/motion.test.mjs scripts/petir/visual.test.mjs",
+    "petir:clouds": "python -I scripts/petir/clouds.py",
+    "petir:audio": "python -I scripts/petir/audio.py",
+    "petir:style": "node scripts/petir/render.mjs",
+    "petir:prototype": "node scripts/petir/render.mjs --prototype",
+    "petir:render": "node scripts/petir/render.mjs --full",
+    "petir:verify": "node scripts/petir/verify.mjs",
+    "petir:seek": "node scripts/petir/render.mjs --serve",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"

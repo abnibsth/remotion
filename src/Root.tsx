@@ -1,3 +1,4 @@
+import { Petir } from "./Petir";
 import { LumoraLaunch } from "./Lumora";
 import { DreamDungeon, Bedroom, Arrival, Meeting, RemSleep, Victory } from "./DreamDungeon";
 import { Composition, Folder } from "remotion";
@@ -10,6 +11,8 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="KenapaPetirBisaMuncul" component={Petir} durationInFrames={1800} fps={60} width={1080} height={1920} />
+      <Composition id="PetirPrototype" component={Petir} durationInFrames={600} fps={60} width={1080} height={1920} />
       <Composition id="DreamDungeon" component={DreamDungeon} durationInFrames={2400} fps={60} width={1080} height={1920} />
       <Folder name="Dream-Dungeon-Scenes">
         <Composition id="Dream-Bedroom" component={Bedroom} durationInFrames={510} fps={60} width={1080} height={1920} />

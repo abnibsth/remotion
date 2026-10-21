@@ -1,0 +1,24 @@
+{
+  "duration": 30,
+  "sample_rate": 48000,
+  "frames": 1440000,
+  "channels": 2,
+  "digital_silence": [
+    19,
+    24
+  ],
+  "silence_nonzero_samples": 0,
+  "loudness": {
+    "input_i": "-15.05",
+    "input_tp": "-1.90",
+    "input_lra": "3.80",
+    "input_thresh": "-25.10",
+    "output_i": "-14.33",
+    "output_tp": "-2.10",
+    "output_lra": "3.40",
+    "output_thresh": "-24.36",
+    "normalization_type": "dynamic",
+    "target_offset": "0.33"
+  },
+  "original": true
+}

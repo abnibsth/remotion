@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "name": "gajian-v2-preview.mp4",
+      "bytes": 2127351,
+      "sha256": "ed9d972fb48ca4a18c8183ed5c90ac0d632a256f6d39f4b7ad7bb361adfa00d4"
+    },
+    {
+      "name": "gajian-v2-final.mp4",
+      "bytes": 6757863,
+      "sha256": "8138d08949668178320c68cd820eb436dfef42f7bdc72c3f419a66200a99da4a"
+    },
+    {
+      "name": "gajian-v2-contact-sheet.png",
+      "bytes": 975957,
+      "sha256": "0cda82b2af29d4060144f3e7f3df7fc2b21ab158a0d0df01d8e33a7b649492da"
+    },
+    {
+      "name": "gajian-v2-editable-source.zip",
+      "bytes": 15727972,
+      "sha256": "11bda878326bcfa6922e9c488cf87e612e47c19fbed95f717a6f8d13abe03ad3"
+    }
+  ]
+}

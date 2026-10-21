@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "name": "gajian-v2-preview.mp4",
+      "duration": 7,
+      "frames": 210,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video": "h264",
+      "audio": "aac",
+      "sampleRate": 48000,
+      "bytes": 2127351,
+      "loudness": {
+        "input_i": "-15.30",
+        "input_tp": "-1.98",
+        "input_lra": "0.90",
+        "input_thresh": "-25.30",
+        "output_i": "-14.21",
+        "output_tp": "-1.05",
+        "output_lra": "0.70",
+        "output_thresh": "-24.21",
+        "normalization_type": "dynamic",
+        "target_offset": "0.21"
+      },
+      "decodePassed": true
+    },
+    {
+      "name": "gajian-v2-final.mp4",
+      "duration": 30,
+      "frames": 900,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video": "h264",
+      "audio": "aac",
+      "sampleRate": 48000,
+      "bytes": 6757863,
+      "loudness": {
+        "input_i": "-15.08",
+        "input_tp": "-1.25",
+        "input_lra": "3.80",
+        "input_thresh": "-25.12",
+        "output_i": "-14.11",
+        "output_tp": "-1.00",
+        "output_lra": "3.50",
+        "output_thresh": "-24.14",
+        "normalization_type": "dynamic",
+        "target_offset": "0.11"
+      },
+      "decodePassed": true
+    }
+  ]
+}

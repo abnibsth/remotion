@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "name": "gajian-master.mp4",
+      "bytes": 18092788,
+      "sha256": "8bd2013e05adc1ba67d85eb4d1d8a4c030f3d3fab18cd45750ae7b58e42a23e7"
+    },
+    {
+      "name": "gajian-tiktok.mp4",
+      "bytes": 26962331,
+      "sha256": "214ef99607425266561dcc89d4ec6966e19bc403d5485b41fded1e02e406e0fb"
+    },
+    {
+      "name": "contact-sheet.png",
+      "bytes": 1933206,
+      "sha256": "ced4150fe8c5802ff9ddf052b401c699dabd9f5fa633ad3890fffcb273281857"
+    },
+    {
+      "name": "gajian-editable-source.zip",
+      "bytes": 21160318,
+      "sha256": "8de36758bfb234e2ed1f563410d7cc21977b1e44083ee0b84b9cc655113fc2b8"
+    }
+  ]
+}

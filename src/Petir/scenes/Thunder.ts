@@ -1,0 +1,4 @@
+import {C,appear,cloudField,mt,terrain,tx} from '../lib/design';
+import {E,progress} from '../lib/motion';
+import {bolt} from './Storm';
+export function thunder(t:number){const q=E(t,26,27.5);return `${cloudField(t,0,.15)}${terrain()}<g opacity=".35">${bolt(false)}</g>${[0,.28,.56].map(a=>{const p=progress(t,26+a,28.5+a);return `<ellipse cx="530" cy="1040" rx="${40+p*900}" ry="${50+p*620}" fill="none" stroke="${C.amber}" stroke-width="${3-p*2}" opacity="${.5*(1-p)*q}"/>`;}).join('')}${appear(mt(96,257,'UDARA MEMANAS SANGAT CEPAT',22,C.amber),t,26)}${appear(tx(92,376,'PETIR',96)+tx(96,437,'= PELEPASAN',45)+tx(96,495,'MUATAN LISTRIK',45),t,26.25)}${appear(tx(96,678,'GUNTUR',75,C.amber)+tx(96,733,'= GELOMBANG TEKANAN',34)+tx(96,779,'DARI PEMANASAN UDARA',34),t,26.7)}${appear(mt(96,1274,'SATU CONTOH PETIR AWAN–TANAH',20,C.white),t,28)}`;}

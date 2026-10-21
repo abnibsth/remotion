@@ -1,0 +1,3 @@
+import React from 'react';import {Audio} from '@remotion/media';import {AbsoluteFill,staticFile,useCurrentFrame,useVideoConfig} from 'remotion';
+import '@fontsource/space-grotesk/latin-700.css';import '@fontsource/inter/latin-500.css';import '@fontsource/ibm-plex-mono/latin-500.css';import {svgAt} from './lib/film';
+export const Petir:React.FC=()=>{const f=useCurrentFrame();const {fps}=useVideoConfig();return <AbsoluteFill style={{backgroundColor:'#0A1224'}}><div style={{width:1080,height:1920}} dangerouslySetInnerHTML={{__html:svgAt(f/fps)}}/><Audio src={staticFile('petir/audio/mix.wav')} premountFor={fps}/></AbsoluteFill>;};

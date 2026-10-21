@@ -1,0 +1,3 @@
+import {C,charges,cloudField,headline,line,mt} from '../lib/design';
+import {E} from '../lib/motion';
+export function separation(t:number){return `${cloudField(t,.6)}${charges(t)}<ellipse cx="540" cy="650" rx="370" ry="170" fill="${C.amber}" opacity="${.04*E(t,8,10)}"/><ellipse cx="540" cy="1040" rx="370" ry="170" fill="${C.violet}" opacity="${.09*E(t,8,10)}"/>${mt(130,538,'MUATAN POSITIF (+)',27,C.amber)}${mt(130,932,'MUATAN NEGATIF (−)',27,C.white)}${line(130,570,880,570,C.amber,1,'opacity=".25"')}${line(130,964,880,964,C.violet,1,'opacity=".4"')}${headline(t-8,['MUATAN LISTRIK','TERPISAH'],'HASIL BANYAK TUMBUKAN')}${mt(96,1275,'POLA MUATAN AWAN BISA BERBEDA',21,C.white)}`;}

@@ -1,0 +1,147 @@
+[aist#0:0/pcm_s24le @ 000001c775928d80] Guessed Channel Layout: stereo
+Input #0, wav, from 'D:\laragon\www\remotion\.claude\worktrees\agent-ac0acb83f7ae7ac32\public\gajian\audio\mix.wav':
+  Duration: 00:00:30.00, bitrate: 2304 kb/s
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+size=N/A time=00:00:22.80 bitrate=N/A speed=  44x elapsed=0:00:00.51    [Parsed_loudnorm_0 @ 000001c7758427c0] 
+{
+	"input_i" : "-21.16",
+	"input_tp" : "-3.07",
+	"input_lra" : "11.30",
+	"input_thresh" : "-31.93",
+	"output_i" : "-14.80",
+	"output_tp" : "-1.10",
+	"output_lra" : "7.10",
+	"output_thresh" : "-25.36",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.80"
+}
+[out#0/null @ 000001c77585fb00] video:0KiB audio:22500KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:30.00 bitrate=N/A speed=46.6x elapsed=0:00:00.64    
+
+SECOND PASS
+[aist#0:0/pcm_s24le @ 000001d72b1b6580] Guessed Channel Layout: stereo
+Input #0, wav, from 'D:\laragon\www\remotion\.claude\worktrees\agent-ac0acb83f7ae7ac32\public\gajian\audio\mix.wav':
+  Duration: 00:00:30.00, bitrate: 2304 kb/s
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_f64le (native))
+Output #0, f64le, to 'pipe:':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: pcm_f64le, 48000 Hz, stereo, dbl, 6144 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_f64le
+size=   15525KiB time=00:00:20.79 bitrate=6114.5kbits/s speed=40.9x elapsed=0:00:00.50    [Parsed_loudnorm_0 @ 000001d72b1c4bc0] 
+{
+	"input_i" : "-21.16",
+	"input_tp" : "-3.07",
+	"input_lra" : "11.30",
+	"input_thresh" : "-31.93",
+	"output_i" : "-14.25",
+	"output_tp" : "-1.10",
+	"output_lra" : "7.30",
+	"output_thresh" : "-24.82",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.25"
+}
+[out#0/f64le @ 000001d72b15eac0] video:0KiB audio:22500KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+size=   22500KiB time=00:00:30.00 bitrate=6144.0kbits/s speed=39.5x elapsed=0:00:00.75    
+
+DELIVERY MEASUREMENT 0
+[aist#0:0/pcm_s24le @ 000002412a5b4400] Guessed Channel Layout: stereo
+Input #0, wav, from 'D:\laragon\www\remotion\.claude\worktrees\agent-ac0acb83f7ae7ac32\public\gajian\audio\mix-normalized.wav':
+  Duration: 00:00:30.00, bitrate: 2304 kb/s
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+size=N/A time=00:00:20.90 bitrate=N/A speed=40.4x elapsed=0:00:00.51    [Parsed_loudnorm_0 @ 000002412c1a9940] 
+{
+	"input_i" : "-14.37",
+	"input_tp" : "-0.79",
+	"input_lra" : "9.40",
+	"input_thresh" : "-25.14",
+	"output_i" : "-13.96",
+	"output_tp" : "-1.10",
+	"output_lra" : "6.50",
+	"output_thresh" : "-24.51",
+	"normalization_type" : "dynamic",
+	"target_offset" : "-0.04"
+}
+[out#0/null @ 000002412a5a6e80] video:0KiB audio:22500KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:30.00 bitrate=N/A speed=43.1x elapsed=0:00:00.69    
+
+MEASURED GAIN CORRECTION 0.3700 dB / OVERSAMPLED LIMITER
+
+DELIVERY MEASUREMENT 1
+[aist#0:0/pcm_s24le @ 000001b6ad90cb40] Guessed Channel Layout: stereo
+Input #0, wav, from 'D:\laragon\www\remotion\.claude\worktrees\agent-ac0acb83f7ae7ac32\public\gajian\audio\mix-normalized.wav':
+  Duration: 00:00:30.00, bitrate: 2304 kb/s
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+size=N/A time=00:00:20.70 bitrate=N/A speed=40.3x elapsed=0:00:00.51    [Parsed_loudnorm_0 @ 000001b6af58e600] 
+{
+	"input_i" : "-14.12",
+	"input_tp" : "-1.30",
+	"input_lra" : "9.30",
+	"input_thresh" : "-24.88",
+	"output_i" : "-13.89",
+	"output_tp" : "-1.10",
+	"output_lra" : "6.60",
+	"output_thresh" : "-24.44",
+	"normalization_type" : "dynamic",
+	"target_offset" : "-0.11"
+}
+[out#0/null @ 000001b6ad8a2d80] video:0KiB audio:22500KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:30.00 bitrate=N/A speed=43.2x elapsed=0:00:00.69    
+
+MEASURED GAIN CORRECTION 0.1200 dB / OVERSAMPLED LIMITER
+
+DELIVERY MEASUREMENT 2
+[aist#0:0/pcm_s24le @ 000001dbbbe47140] Guessed Channel Layout: stereo
+Input #0, wav, from 'D:\laragon\www\remotion\.claude\worktrees\agent-ac0acb83f7ae7ac32\public\gajian\audio\mix-normalized.wav':
+  Duration: 00:00:30.00, bitrate: 2304 kb/s
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+size=N/A time=00:00:22.20 bitrate=N/A speed=43.7x elapsed=0:00:00.50    [Parsed_loudnorm_0 @ 000001dbbbe478c0] 
+{
+	"input_i" : "-14.02",
+	"input_tp" : "-1.32",
+	"input_lra" : "9.30",
+	"input_thresh" : "-24.78",
+	"output_i" : "-13.89",
+	"output_tp" : "-1.10",
+	"output_lra" : "6.50",
+	"output_thresh" : "-24.44",
+	"normalization_type" : "dynamic",
+	"target_offset" : "-0.11"
+}
+[out#0/null @ 000001dbbbdfe200] video:0KiB audio:22500KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:30.00 bitrate=N/A speed=46.3x elapsed=0:00:00.64    

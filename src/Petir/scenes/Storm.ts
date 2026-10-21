@@ -1,0 +1,4 @@
+import {C,cloudField,headline,terrain} from '../lib/design';
+import {channel,E,flash} from '../lib/motion';
+export function bolt(full=true){const pts=channel();const d=pts.map((p,i)=>`${i?'L':'M'}${p.x} ${p.y}`).join('')+'L525 1400';return `<g>${[20,8,2.8].map((w,i)=>`<path d="${d}" fill="none" stroke="${i===2?C.white:C.cyan}" stroke-width="${w}" opacity="${i===0?.07:i===1?.3:1}" stroke-linecap="round" stroke-linejoin="round"/>`).join('')}${full?[7,12,18].map((j,i)=>{const p=pts[j];return `<path d="M${p.x} ${p.y}l${i%2?110:-130} 90 ${i%2?50:-65} 100" fill="none" stroke="${C.cyan}" stroke-width="1.5" opacity=".6"/>`;}).join(''):''}</g>`;}
+export function storm(t:number){const lit=flash(t);return `${cloudField(t,0,lit)}${terrain()}<g opacity="${E(t,.3,.36)}">${bolt()}</g>${headline(t,['KENAPA PETIR','BISA MUNCUL?'],'DI BALIK SATU KILATAN')}`;}

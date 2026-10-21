@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "expected": {
+    "duration": 30,
+    "frames": 900,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "audioCodec": "aac",
+    "sampleRate": 48000
+  },
+  "files": [
+    {
+      "name": "gajian-master.mp4",
+      "passed": true,
+      "bytes": 18092788,
+      "mebibytes": 17.255,
+      "media": {
+        "duration": 30,
+        "frames": 900,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "audioCodec": "aac",
+        "sampleRate": 48000,
+        "channels": 2,
+        "videoBitrate": 4515756,
+        "containerBitrate": 4824743
+      },
+      "fastStart": {
+        "passed": true,
+        "atoms": [
+          {
+            "type": "ftyp",
+            "offset": 0,
+            "bytes": 32
+          },
+          {
+            "type": "moov",
+            "offset": 32,
+            "bytes": 33644
+          },
+          {
+            "type": "free",
+            "offset": 33676,
+            "bytes": 8
+          },
+          {
+            "type": "mdat",
+            "offset": 33684,
+            "bytes": 18059104
+          }
+        ]
+      },
+      "decodePassed": true,
+      "loudness": {
+        "integratedLUFS": -13.9,
+        "loudnessRangeLU": 8.4,
+        "truePeakDbTP": -1.2,
+        "summary": "Summary:\r\n\r\n  Integrated loudness:\r\n    I:         -13.9 LUFS\r\n    Threshold: -24.5 LUFS\r\n\r\n  Loudness range:\r\n    LRA:         8.4 LU\r\n    Threshold: -34.9 LUFS\r\n    LRA low:   -21.3 LUFS\r\n    LRA high:  -12.9 LUFS\r\n\r\n  True peak:\r\n    Peak:       -1.2 dBFS\r\n[out#0/null @ 000001f30f282d40] video:0KiB audio:5625KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nsize=N/A time=00:00:30.00 bitrate=N/A speed= 309x elapsed=0:00:00.09"
+      },
+      "blackdetect": {
+        "enabled": true,
+        "minimumDuration": 0.1,
+        "intervals": []
+      }
+    },
+    {
+      "name": "gajian-tiktok.mp4",
+      "passed": true,
+      "bytes": 26962331,
+      "mebibytes": 25.713,
+      "media": {
+        "duration": 30,
+        "frames": 900,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "audioCodec": "aac",
+        "sampleRate": 48000,
+        "channels": 2,
+        "videoBitrate": 6880953,
+        "containerBitrate": 7189954
+      },
+      "fastStart": {
+        "passed": true,
+        "atoms": [
+          {
+            "type": "ftyp",
+            "offset": 0,
+            "bytes": 32
+          },
+          {
+            "type": "moov",
+            "offset": 32,
+            "bytes": 33700
+          },
+          {
+            "type": "free",
+            "offset": 33732,
+            "bytes": 8
+          },
+          {
+            "type": "mdat",
+            "offset": 33740,
+            "bytes": 26928591
+          }
+        ]
+      },
+      "decodePassed": true,
+      "loudness": {
+        "integratedLUFS": -13.9,
+        "loudnessRangeLU": 8.4,
+        "truePeakDbTP": -1.2,
+        "summary": "Summary:\r\n\r\n  Integrated loudness:\r\n    I:         -13.9 LUFS\r\n    Threshold: -24.5 LUFS\r\n\r\n  Loudness range:\r\n    LRA:         8.4 LU\r\n    Threshold: -34.9 LUFS\r\n    LRA low:   -21.3 LUFS\r\n    LRA high:  -12.9 LUFS\r\n\r\n  True peak:\r\n    Peak:       -1.2 dBFS\r\n[out#0/null @ 00000231503d1640] video:0KiB audio:5625KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nsize=N/A time=00:00:30.00 bitrate=N/A speed= 313x elapsed=0:00:00.09"
+      },
+      "blackdetect": {
+        "enabled": true,
+        "minimumDuration": 0.1,
+        "intervals": []
+      }
+    }
+  ],
+  "checks": [
+    "900 consecutive source PNG frames",
+    "shuffled seeking SHA-256 equality on every beat",
+    "loaded custom fonts",
+    "three viewport runtime/font tests",
+    "primary typography inside safe area",
+    "no browser errors",
+    "5-column contact sheet",
+    "exact 30s / 900-frame / 1080x1920 / 30fps video",
+    "AAC 48kHz stereo audio",
+    "full video/audio decode",
+    "faststart MP4 atoms",
+    "EBU R128 integrated loudness and true peak measured",
+    "file sizes recorded"
+  ],
+  "errors": []
+}
