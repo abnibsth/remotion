@@ -1,3 +1,4 @@
+import { FixOneBug } from "./FixOneBug";
 import { PhpIsDead, PhpAnnouncement, PhpPredictions, PhpSilence, PhpComeback, PhpPunchline, PhpTerminal } from "./PhpIsDead";
 import { ChaosToOrder } from "./ChaosToOrder";
 import { ScienceOfDownforce } from "./Downforce";
@@ -26,6 +27,8 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="FixOneBug" component={FixOneBug} durationInFrames={1200} fps={60} width={1080} height={1920} />
+      <Composition id="FixOneBugPrototype" component={FixOneBug} durationInFrames={600} fps={60} width={1080} height={1920} />
       <Composition id="PhpIsDead" component={PhpIsDead} durationInFrames={1200} fps={60} width={1080} height={1920} />
       <Composition id="PhpIsDeadPrototype" component={PhpIsDead} durationInFrames={480} fps={60} width={1080} height={1920} />
       <Folder name="PHP-Scenes">

@@ -1,0 +1,12 @@
+export function clamp(v:number,a?:number,b?:number):number;
+export function smooth(v:number):number;
+export function mix(a:number,b:number,q:number):number;
+export function hash(n:number):number;
+export function spring(t:number):number;
+export const labels:string[];
+export type ErrorObject={id:string;index:number;label:string;initial:{x:number;z:number};spawn:number;target:{x:number;z:number};scale:number;rotation:number;velocity:string;city:{x:number;z:number;h:number};reveal:{x:number;z:number}};
+export const objects:ErrorObject[];
+export type Camera={yaw:number;tilt:number;scale:number;centerY:number;reveal:number};
+export function cameraAt(t:number):Camera;
+export function project(x:number,z:number,h:number,c:Camera):{x:number;y:number};
+export function poseAt(o:ErrorObject,t:number):{x:number;z:number;h:number;scale:number;rotation:number};

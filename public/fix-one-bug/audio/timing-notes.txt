@@ -1,0 +1,20 @@
+FIX ONE BUG. CREATE TEN MORE. — ORIGINAL SOUND CUES
+20.000 seconds / stereo 48000 Hz / 24-bit WAV
+Place mix.wav at t=0; no offset, trimming or stretching.
+
+0–3: quiet synthesized keys and low tension
+3.30: correction key
+3.65: success triad and short optimistic phrase
+6.10: interruption hit
+6.30 + i*0.13, i=0..9: ten distinct error impacts
+10.00–14.62: mechanical rhythmic construction, increasing harmonic tension
+15.35: original synthesized cinematic resolution
+16.50–18.00: dry pause
+18.35: key
+18.85: notification tone
+19.65: final dry key
+19.90–20: silence
+
+No narration, external samples, downloaded music or borrowed soundtrack.
+Stems are premaster and time-aligned; shared final mastering is applied only to mix.wav.
+metrics.json input_i/input_tp are measurements of the decoded AAC test encode; output_* fields are hypothetical loudnorm outputs, not delivered measurements.

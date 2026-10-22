@@ -1,0 +1,326 @@
+{
+  "title": "PHP IS DEAD (AGAIN)",
+  "seed": 20261022,
+  "duration_seconds": 20.0,
+  "frames": 960000,
+  "sample_rate": 48000,
+  "channels": 2,
+  "pcm_bits": 24,
+  "wav": {
+    "integrated_lufs": -14.04,
+    "true_peak_dbtp": -2.5,
+    "loudness_range_lu": 22.0
+  },
+  "decoded_aac": {
+    "integrated_lufs": -14.05,
+    "true_peak_dbtp": -2.31,
+    "loudness_range_lu": 22.1,
+    "bitrate": "320k",
+    "file": "mix-aac-qc.m4a",
+    "decoded_frames_including_codec_padding": 960000
+  },
+  "silence_windows_wav": [
+    {
+      "start": 8,
+      "end": 10,
+      "nonzero_samples": 0,
+      "peak_amplitude": 0.0,
+      "exact_silence": true
+    },
+    {
+      "start": 14.55,
+      "end": 15.2,
+      "nonzero_samples": 0,
+      "peak_amplitude": 0.0,
+      "exact_silence": true
+    },
+    {
+      "start": 19.85,
+      "end": 20,
+      "nonzero_samples": 0,
+      "peak_amplitude": 0.0,
+      "exact_silence": true
+    }
+  ],
+  "silence_interiors_decoded_aac": [
+    {
+      "start": 8.05,
+      "end": 9.95,
+      "nonzero_samples": 0,
+      "peak_amplitude": 0.0,
+      "exact_silence": true
+    },
+    {
+      "start": 19.9,
+      "end": 20,
+      "nonzero_samples": 0,
+      "peak_amplitude": 0.0,
+      "exact_silence": true
+    }
+  ],
+  "stems": {
+    "impacts": {
+      "file": "stem-impacts.wav",
+      "frames": 960000,
+      "peak_amplitude": 0.8200000524520874,
+      "finite": true,
+      "silence": [
+        {
+          "start": 8,
+          "end": 10,
+          "nonzero_samples": 0,
+          "peak_amplitude": 0.0,
+          "exact_silence": true
+        },
+        {
+          "start": 19.85,
+          "end": 20,
+          "nonzero_samples": 0,
+          "peak_amplitude": 0.0,
+          "exact_silence": true
+        }
+      ],
+      "sha256": "7f5bf80ecffb0e54b0df351fdea519dd3f9f9cb5f399269bfe0b1ebd81608bcf"
+    },
+    "timeline": {
+      "file": "stem-timeline.wav",
+      "frames": 960000,
+      "peak_amplitude": 0.5017765760421753,
+      "finite": true,
+      "silence": [
+        {
+          "start": 8,
+          "end": 10,
+          "nonzero_samples": 0,
+          "peak_amplitude": 0.0,
+          "exact_silence": true
+        },
+        {
+          "start": 19.85,
+          "end": 20,
+          "nonzero_samples": 0,
+          "peak_amplitude": 0.0,
+          "exact_silence": true
+        }
+      ],
+      "sha256": "5be93d2b22f3a53d5a62d7bb4b2d4f65a7ecbd768d8bbb301b172e6cf5a44e65"
+    },
+    "hero": {
+      "file": "stem-hero.wav",
+      "frames": 960000,
+      "peak_amplitude": 0.578235387802124,
+      "finite": true,
+      "silence": [
+        {
+          "start": 8,
+          "end": 10,
+          "nonzero_samples": 0,
+          "peak_amplitude": 0.0,
+          "exact_silence": true
+        },
+        {
+          "start": 19.85,
+          "end": 20,
+          "nonzero_samples": 0,
+          "peak_amplitude": 0.0,
+          "exact_silence": true
+        }
+      ],
+      "sha256": "0b5b2d9f916d4aeb94f100186a60fca30724cd9a44ad61a9cb787b966e9aa253"
+    },
+    "phrases": {
+      "file": "stem-phrases.wav",
+      "frames": 960000,
+      "peak_amplitude": 0.1018056869506836,
+      "finite": true,
+      "silence": [
+        {
+          "start": 8,
+          "end": 10,
+          "nonzero_samples": 0,
+          "peak_amplitude": 0.0,
+          "exact_silence": true
+        },
+        {
+          "start": 19.85,
+          "end": 20,
+          "nonzero_samples": 0,
+          "peak_amplitude": 0.0,
+          "exact_silence": true
+        }
+      ],
+      "sha256": "8d7aa110f2d295ab1bf31fb6603c5bfc196fbc912c408358c433835a8c177dde"
+    },
+    "keyboard": {
+      "file": "stem-keyboard.wav",
+      "frames": 960000,
+      "peak_amplitude": 0.07084715366363525,
+      "finite": true,
+      "silence": [
+        {
+          "start": 8,
+          "end": 10,
+          "nonzero_samples": 0,
+          "peak_amplitude": 0.0,
+          "exact_silence": true
+        },
+        {
+          "start": 19.85,
+          "end": 20,
+          "nonzero_samples": 0,
+          "peak_amplitude": 0.0,
+          "exact_silence": true
+        }
+      ],
+      "sha256": "a3bee9f732b6e994d4e43f1c7ec8ae09bb545c01c3c4f0941bbbf5365ce2f907"
+    }
+  },
+  "stem_note": "Time-aligned premaster stems; not individually loudness-normalized. Final master has shared loudnorm/peak processing, so stems do not sum to the mastered WAV.",
+  "events": [
+    {
+      "at": [
+        0.12,
+        1.0,
+        1.58
+      ],
+      "stem": "impacts",
+      "cue": "Oversized synthesized low cinematic punches"
+    },
+    {
+      "at": [
+        3.1,
+        4.4,
+        5.48,
+        6.36,
+        7.05,
+        7.35,
+        7.55,
+        7.72
+      ],
+      "stem": "timeline",
+      "cue": "Accelerating mechanical timeline stamps"
+    },
+    {
+      "start": 8.0,
+      "end": 10.0,
+      "cue": "Absolute digital silence, no meanwhile sound"
+    },
+    {
+      "start": 10.0,
+      "end": 14.55,
+      "stem": "hero",
+      "cue": "Original ludicrously heroic synthesized brass/chord swell"
+    },
+    {
+      "at": [
+        10.0,
+        11.0,
+        12.0,
+        13.0
+      ],
+      "stem": "hero",
+      "cue": "Increasing build downbeats"
+    },
+    {
+      "at": [
+        14.25
+      ],
+      "stem": "hero",
+      "cue": "Heroic D-major peak; all hero audio cut at 14.55"
+    },
+    {
+      "start": 14.55,
+      "end": 15.2,
+      "cue": "Silence around visual BRO at 14.65; no spoken word"
+    },
+    {
+      "at": [
+        15.2,
+        15.65,
+        16.25
+      ],
+      "stem": "phrases",
+      "cue": "Dry restrained low punctuation"
+    },
+    {
+      "start": 18.1,
+      "end": 18.6,
+      "stem": "keyboard",
+      "cue": "Minimal dry synthesized keyboard typing"
+    },
+    {
+      "at": [
+        18.85
+      ],
+      "stem": "keyboard",
+      "cue": "Small clean reveal glint"
+    },
+    {
+      "at": [
+        19.63
+      ],
+      "stem": "keyboard",
+      "cue": "Last dry key"
+    },
+    {
+      "start": 19.85,
+      "end": 20.0,
+      "cue": "Absolute digital silence"
+    }
+  ],
+  "original_synthesis": true,
+  "external_samples": false,
+  "voiceover": false,
+  "mastering": {
+    "first_pass": {
+      "input_i": "-18.56",
+      "input_tp": "-1.69",
+      "input_lra": "15.20",
+      "input_thresh": "-30.48",
+      "output_i": "-13.90",
+      "output_tp": "-2.00",
+      "output_lra": "17.20",
+      "output_thresh": "-25.51",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.10"
+    },
+    "second_pass": {
+      "input_i": "-18.56",
+      "input_tp": "-1.69",
+      "input_lra": "15.20",
+      "input_thresh": "-30.48",
+      "output_i": "-14.08",
+      "output_tp": "-2.50",
+      "output_lra": "17.20",
+      "output_thresh": "-25.70",
+      "normalization_type": "dynamic",
+      "target_offset": "0.08"
+    },
+    "corrections": [
+      {
+        "iteration": 0,
+        "limiter_ceiling_dbtp": -2.5,
+        "wav_lufs": -14.04,
+        "wav_dbtp": -2.5,
+        "aac_lufs": -14.05,
+        "aac_dbtp": -2.31
+      }
+    ]
+  },
+  "measurement": "FFmpeg loudnorm EBU R128, final 24-bit WAV and actual decoded AAC 320 kb/s encode",
+  "sha256": "d4baef9ba2de84180ad41aac7a99ce5dd9d4a121ac4fed2e9798891a1645c9b9",
+  "checks": {
+    "exact_20_seconds": true,
+    "stereo_48khz_24bit_pcm": true,
+    "finite_unclipped": true,
+    "stereo_not_dual_mono": true,
+    "exact_required_silences": true,
+    "wav_loudness_minus14_plusminus1": true,
+    "wav_conservative_true_peak": true,
+    "decoded_aac_loudness_minus14_plusminus1": true,
+    "decoded_aac_true_peak": true,
+    "all_stems_full_length_finite_unclipped": true,
+    "all_stems_required_silences": true
+  },
+  "passed": true
+}

@@ -1,0 +1,44 @@
+PHP IS DEAD (AGAIN) — AUDIO CUE SHEET
+20.000 seconds / 960000 sample frames / stereo / 48000 Hz / PCM 24-bit
+All cue times are seconds from composition start. Place mix.wav at time zero.
+Do not stretch, offset, loop, or separately normalize segments.
+
+0.12, 1.00, 1.58: three huge synthesized low punches with metallic noise debris.
+3.10, 4.40, 5.48, 6.36, 7.05: mechanical timeline stamps.
+7.35, 7.55, 7.72: additional accelerating stamps.
+8.00 <= t < 10.00: EXACT DIGITAL ZERO, no meanwhile pad or residual echo.
+  Sample frames 384000 through 479999 inclusive are zero in mix and all stems.
+10.00: original ridiculous heroic brass-like chord swell begins in D.
+11.00: build shifts to Bb; 12.00: G; 13.00: A-suspended.
+  Increasing low downbeats at exactly 10, 11, 12, 13 seconds.
+14.25: heroic D-major peak.
+14.55: abrupt guillotine cutoff of every hero voice and reflection.
+  One-millisecond terminal de-click avoids an unintended digital pop.
+14.55 <= t < 15.20: EXACT DIGITAL ZERO.
+14.65: visual BRO receives silence, NOT voiceover or an extra musical hit.
+15.20, 15.65, 16.25: restrained dry low phrase punctuation, no reverb.
+18.10, 18.18, 18.235, 18.33, 18.405, 18.47, 18.545: minimal keyboard.
+  Every typing transient ends by 18.600; no continuous keyboard bed.
+18.85: small clean two-tone reveal glint, no tail beyond 19.07.
+19.63: final dry key, ending by 19.695.
+19.85 <= t < 20.00: EXACT DIGITAL ZERO (in practice silence begins earlier).
+
+MASTERING AND CODEC NOTES
+The final WAV is normalized using actual FFmpeg two-pass loudnorm followed by
+oversampled peak control. Required zero regions are enforced after processing,
+then the delivered WAV is remeasured. Metrics are measured, not inferred.
+Target decoded AAC: -14 LUFS +/- 1 LU; true peak at most -1 dBTP.
+Conservative WAV ceiling: at most -2 dBTP. See metrics.json for actual values.
+
+AAC is transform/block based: it can smear tiny nonzero energy across exact
+boundaries and add encoder padding. Therefore exact zero-boundary guarantees
+apply to the authoritative WAV and stems, not to lossy decoded AAC samples.
+AAC silence interiors and decoded frame count are separately measured and saved.
+Use the WAV master for rendering; the retained AAC is a QC reference.
+
+STEMS
+All five stems are stereo 48 kHz, 24-bit and exactly 20 seconds, starting at zero.
+The hero stem is zero outside the heroic passage, including after 14.55.
+The final mastered WAV has shared dynamics processing; summing premaster stems
+reconstructs the premaster, not the final mastered signal. Do not play stems on
+top of mix.wav. No VO or external samples are present.
