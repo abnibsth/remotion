@@ -1,3 +1,4 @@
+import { PhpIsDead, PhpAnnouncement, PhpPredictions, PhpSilence, PhpComeback, PhpPunchline, PhpTerminal } from "./PhpIsDead";
 import { ChaosToOrder } from "./ChaosToOrder";
 import { ScienceOfDownforce } from "./Downforce";
 import { Petir } from "./Petir";
@@ -25,6 +26,16 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="PhpIsDead" component={PhpIsDead} durationInFrames={1200} fps={60} width={1080} height={1920} />
+      <Composition id="PhpIsDeadPrototype" component={PhpIsDead} durationInFrames={480} fps={60} width={1080} height={1920} />
+      <Folder name="PHP-Scenes">
+        <Composition id="PHP-Announcement" component={PhpAnnouncement} durationInFrames={180} fps={60} width={1080} height={1920} />
+        <Composition id="PHP-Predictions" component={PhpPredictions} durationInFrames={300} fps={60} width={1080} height={1920} />
+        <Composition id="PHP-Silence" component={PhpSilence} durationInFrames={120} fps={60} width={1080} height={1920} />
+        <Composition id="PHP-Comeback" component={PhpComeback} durationInFrames={240} fps={60} width={1080} height={1920} />
+        <Composition id="PHP-Punchline" component={PhpPunchline} durationInFrames={240} fps={60} width={1080} height={1920} />
+        <Composition id="PHP-Terminal" component={PhpTerminal} durationInFrames={120} fps={60} width={1080} height={1920} />
+      </Folder>
       <Composition id="ChaosToOrder" component={ChaosToOrder} durationInFrames={1200} fps={60} width={1080} height={1920} />
       <Composition id="ChaosToOrderPrototype" component={ChaosToOrder} durationInFrames={480} fps={60} width={1080} height={1920} />
       <Composition id="ScienceOfDownforce" component={ScienceOfDownforce} durationInFrames={1800} fps={60} width={1080} height={1920} />

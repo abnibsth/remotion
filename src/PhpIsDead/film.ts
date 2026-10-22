@@ -1,0 +1,10 @@
+import {C} from './design';
+import {sceneAt} from './motion.mjs';
+import {announcement} from './scenes/Announcement';
+import {predictions} from './scenes/Predictions';
+import {silence} from './scenes/Silence';
+import {comeback} from './scenes/Comeback';
+import {punchline} from './scenes/Punchline';
+import {terminal} from './scenes/Terminal';
+export const scenes=[announcement,predictions,silence,comeback,punchline,terminal];
+export const svgAt=(t:number,scene=sceneAt(t))=>`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920"><rect width="1080" height="1920" fill="${C.black}"/><defs><pattern id="grain" width="7" height="11" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="${C.white}" opacity=".02"/></pattern></defs>${scenes[scene](t)}<rect width="1080" height="1920" fill="url(#grain)" pointer-events="none"/></svg>`;
