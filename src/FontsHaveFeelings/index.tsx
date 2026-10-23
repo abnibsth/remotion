@@ -1,0 +1,16 @@
+import React from 'react';
+import {AbsoluteFill,staticFile,useCurrentFrame,useVideoConfig} from 'remotion';
+import {Audio} from '@remotion/media';
+import '@fontsource/archivo-black/latin-400.css';
+import '@fontsource/inter-tight/latin-800-italic.css';
+import '@fontsource/cormorant-garamond/latin-500.css';
+import '@fontsource/ibm-plex-mono/latin-500.css';
+import {svgAt} from './film';
+const Picture:React.FC<{offset?:number}>=({offset=0})=>{const f=useCurrentFrame();const{fps}=useVideoConfig();return <AbsoluteFill style={{background:'#F5F1E8'}}><div dangerouslySetInnerHTML={{__html:svgAt(f/fps+offset)}}/></AbsoluteFill>;};
+export const FeelingsQuestion=()=> <Picture/>;
+export const FeelingsBold=()=> <Picture offset={3}/>;
+export const FeelingsItalic=()=> <Picture offset={6}/>;
+export const FeelingsSerif=()=> <Picture offset={9}/>;
+export const FeelingsMono=()=> <Picture offset={12}/>;
+export const FeelingsPersonality=()=> <Picture offset={15}/>;
+export const FontsHaveFeelings:React.FC=()=>{const{fps}=useVideoConfig();return <AbsoluteFill><Picture/><Audio src={staticFile('fonts-have-feelings/audio/mix.wav')} premountFor={fps}/></AbsoluteFill>;};

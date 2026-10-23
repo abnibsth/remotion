@@ -1,0 +1,10 @@
+export type Key='bold'|'italic'|'serif'|'monospace';
+export function clamp(v:number,a?:number,b?:number):number;
+export function smooth(v:number):number;
+export function mix(a:number,b:number,q:number):number;
+export function spring(t:number,w?:number,d?:number):number;
+export const profiles:Record<Key,{typeface:string;mass:string;motion:string;anticipation:number;overshoot:number;settle:number;followThrough:number;trajectory:string;color:string;accent:string}>;
+export const starts:Record<Key,number>;
+export function openingPose(key:Key,t:number):{x:number;y:number;size:number;rotation:number;dx:number};
+export function poseAt(key:Key,t:number):{x:number;y:number;sx:number;sy:number;rotation:number};
+export function assemblyAt(t:number):{glyph:string;key:Key;x:number;y:number;progress:number;row:number;n:number}[];

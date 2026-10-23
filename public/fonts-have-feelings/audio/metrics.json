@@ -1,0 +1,29 @@
+{
+  "decoded_aac": {
+    "input_i": "-14.32",
+    "input_tp": "-1.54",
+    "input_lra": "13.30",
+    "input_thresh": "-25.42",
+    "output_i": "-13.09",
+    "output_tp": "-2.00",
+    "output_lra": "5.20",
+    "output_thresh": "-24.16",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.91"
+  },
+  "first_pass": {
+    "input_i": "-25.33",
+    "input_tp": "-5.63",
+    "input_lra": "16.00",
+    "input_thresh": "-37.04",
+    "output_i": "-15.40",
+    "output_tp": "-2.00",
+    "output_lra": "6.20",
+    "output_thresh": "-26.55",
+    "normalization_type": "dynamic",
+    "target_offset": "1.40"
+  },
+  "duration": 20,
+  "sample_rate": 48000,
+  "seed": 23102026
+}

@@ -1,3 +1,4 @@
+import { FontsHaveFeelings, FeelingsQuestion, FeelingsBold, FeelingsItalic, FeelingsSerif, FeelingsMono, FeelingsPersonality } from "./FontsHaveFeelings";
 import { FixOneBug } from "./FixOneBug";
 import { PhpIsDead, PhpAnnouncement, PhpPredictions, PhpSilence, PhpComeback, PhpPunchline, PhpTerminal } from "./PhpIsDead";
 import { ChaosToOrder } from "./ChaosToOrder";
@@ -27,6 +28,16 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="FontsHaveFeelings" component={FontsHaveFeelings} durationInFrames={1200} fps={60} width={1080} height={1920} />
+      <Composition id="FontsHaveFeelingsPrototype" component={FontsHaveFeelings} durationInFrames={540} fps={60} width={1080} height={1920} />
+      <Folder name="Font-Personalities">
+        <Composition id="Feelings-Question" component={FeelingsQuestion} durationInFrames={180} fps={60} width={1080} height={1920} />
+        <Composition id="Feelings-Bold" component={FeelingsBold} durationInFrames={180} fps={60} width={1080} height={1920} />
+        <Composition id="Feelings-Italic" component={FeelingsItalic} durationInFrames={180} fps={60} width={1080} height={1920} />
+        <Composition id="Feelings-Serif" component={FeelingsSerif} durationInFrames={180} fps={60} width={1080} height={1920} />
+        <Composition id="Feelings-Mono" component={FeelingsMono} durationInFrames={180} fps={60} width={1080} height={1920} />
+        <Composition id="Feelings-Personality" component={FeelingsPersonality} durationInFrames={300} fps={60} width={1080} height={1920} />
+      </Folder>
       <Composition id="FixOneBug" component={FixOneBug} durationInFrames={1200} fps={60} width={1080} height={1920} />
       <Composition id="FixOneBugPrototype" component={FixOneBug} durationInFrames={600} fps={60} width={1080} height={1920} />
       <Composition id="PhpIsDead" component={PhpIsDead} durationInFrames={1200} fps={60} width={1080} height={1920} />

@@ -1,0 +1,35 @@
+/* node_modules/@fontsource/archivo-black/latin-400.css */
+@font-face {
+  font-family: "Archivo Black";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("./fonts/archivo-black-latin-400-normal-5APYPRNB.woff2") format("woff2"), url("./fonts/archivo-black-latin-400-normal-TJVMO4AD.woff") format("woff");
+}
+
+/* node_modules/@fontsource/inter-tight/latin-800-italic.css */
+@font-face {
+  font-family: "Inter Tight";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 800;
+  src: url("./fonts/inter-tight-latin-800-italic-XUHNKFKB.woff2") format("woff2"), url("./fonts/inter-tight-latin-800-italic-62BG24BX.woff") format("woff");
+}
+
+/* node_modules/@fontsource/cormorant-garamond/latin-500.css */
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("./fonts/cormorant-garamond-latin-500-normal-G6U2RTNK.woff2") format("woff2"), url("./fonts/cormorant-garamond-latin-500-normal-LI3IVY5F.woff") format("woff");
+}
+
+/* node_modules/@fontsource/ibm-plex-mono/latin-500.css */
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("./fonts/ibm-plex-mono-latin-500-normal-33HAQIPI.woff2") format("woff2"), url("./fonts/ibm-plex-mono-latin-500-normal-EJMP6L36.woff") format("woff");
+}
