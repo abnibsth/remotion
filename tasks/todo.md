@@ -1,11 +1,15 @@
-# Production checklist
-- [x] Skills/environment and finance tests
-- [x] Continuous first-five-second prototype
-- [x] Five style frames inspected
-- [x] Prototype rendered and inspected
-- [x] Remaining continuous motion implemented
-- [x] Original score and loudness measured
-- [x] Full contact sheet and deterministic browser QC
-- [x] Master / preview / social encoded
-- [x] FFprobe, decode, frame count and audio validation
-- [x] Short production report and delivery links
+# UI Escapes production checklist
+- [x] Read motion skill and inspect existing tools
+- [x] Open Remotion Studio
+- [ ] Deterministic timeline tests
+- [ ] Studio, original UI and folder transformation
+- [ ] Normal/emerge/impact style review
+- [ ] Render and verify seven-second prototype
+- [ ] Browser flexible mesh peel
+- [ ] Notification contacts, stacking and folder nudge
+- [ ] DELETE portal and quiet final gag
+- [ ] Original audio stems, mix and license notes
+- [ ] Full contact sheet and random seek QC
+- [ ] Render exactly 1500 final frames
+- [ ] FFprobe, decode, audio and playback verification
+- [ ] QC report and delivery links

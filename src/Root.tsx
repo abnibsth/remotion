@@ -1,3 +1,4 @@
+import { UiEscapes, UiNormal, UiFolder, UiBrowser, UiNotifications, UiPortal, UiEnding } from "./UiEscapes";
 import { FontsHaveFeelings, FeelingsQuestion, FeelingsBold, FeelingsItalic, FeelingsSerif, FeelingsMono, FeelingsPersonality } from "./FontsHaveFeelings";
 import { FixOneBug } from "./FixOneBug";
 import { PhpIsDead, PhpAnnouncement, PhpPredictions, PhpSilence, PhpComeback, PhpPunchline, PhpTerminal } from "./PhpIsDead";
@@ -28,6 +29,16 @@ import { Title } from "./HelloWorld/Title";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="WhenUiEscapesTheScreen" component={UiEscapes} durationInFrames={1500} fps={60} width={1080} height={1920} />
+      <Composition id="UiEscapesPrototype" component={UiEscapes} durationInFrames={420} fps={60} width={1080} height={1920} />
+      <Folder name="UI-Escapes-Scenes">
+        <Composition id="UI-Normal" component={UiNormal} durationInFrames={180} fps={60} width={1080} height={1920} />
+        <Composition id="UI-Folder" component={UiFolder} durationInFrames={240} fps={60} width={1080} height={1920} />
+        <Composition id="UI-Browser" component={UiBrowser} durationInFrames={240} fps={60} width={1080} height={1920} />
+        <Composition id="UI-Notifications" component={UiNotifications} durationInFrames={300} fps={60} width={1080} height={1920} />
+        <Composition id="UI-Portal" component={UiPortal} durationInFrames={300} fps={60} width={1080} height={1920} />
+        <Composition id="UI-Ending" component={UiEnding} durationInFrames={240} fps={60} width={1080} height={1920} />
+      </Folder>
       <Composition id="FontsHaveFeelings" component={FontsHaveFeelings} durationInFrames={1200} fps={60} width={1080} height={1920} />
       <Composition id="FontsHaveFeelingsPrototype" component={FontsHaveFeelings} durationInFrames={540} fps={60} width={1080} height={1920} />
       <Folder name="Font-Personalities">

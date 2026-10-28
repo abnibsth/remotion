@@ -1,0 +1,16 @@
+export type Pose={position:number[];rotation:number[];scale:number[];visible:boolean;depth:number;peel?:number};
+export const clamp:(x:number,a?:number,b?:number)=>number;
+export const mix:(a:number,b:number,u:number)=>number;
+export const ease:(t:number,a:number,b:number)=>number;
+export const spring:(t:number,k?:number,d?:number)=>number;
+export const lerp3:(a:number[],b:number[],u:number)=>number[];
+export const screenToWorld:(x:number,y:number)=>[number,number,number];
+export const PORTAL:[number,number,number];
+export const CARD_TIMES:number[];
+export const LABELS:string[];
+export const OBJECTS:Record<string,{origin:[number,number,number];size:number[];screen:number[];material:string}>;
+export const folderAt:(t:number)=>Pose;
+export const browserAt:(t:number)=>Pose & {peel:number};
+export const cardAt:(i:number,t:number)=>Pose;
+export const cameraAt:(t:number)=>{position:number[];target:number[];fov:number};
+export const stateAt:(t:number)=>{t:number;camera:ReturnType<typeof cameraAt>;folder:Pose;browser:Pose & {peel:number};cards:Pose[];portal:{scale:number;angle:number};restore:number;notification:number};

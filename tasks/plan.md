@@ -1,30 +1,26 @@
-# Implementation Plan: Where Did My Money Go?
+# Implementation Plan: When UI Escapes the Screen
 
-Build the user's supplied six-beat, 20-second brief as a new Remotion composition, without altering earlier films. The user explicitly authorized the complete staged production and export.
+The supplied brief authorizes the complete staged production and export. Preserve all existing compositions. Build a real Three.js continuous shot, with a shared deterministic timeline and locally installed fonts.
 
-## Architecture
-- One continuously deforming receipt surface; React/SVG geometry driven only by frame time.
-- Shared pure timeline, finance, camera and correspondence-based morph functions.
-- Existing Remotion Studio plus a standalone deterministic `window.seek(seconds)` QA surface using the same component.
-- Locally installed Space Grotesk and IBM Plex Mono; original synthesized audio.
-- Keep social output 1920×1080/60, as specified; use a smaller bitrate rather than inventing a vertical crop.
+## Architecture decisions
+- One shared `createFilm()` Three.js engine used by the Remotion composition and the Playwright `window.seek(t)` capture page.
+- UI objects begin as the same textured/colored meshes on the display plane. Thickness, peel deformation, gravity, contact and vortex returns are functions of absolute time.
+- Browser content uses UVs on a deformable subdivided mesh; the texture is never swapped for a blank panel.
+- Closed-form deterministic ballistic/spring curves replace realtime physics. Original stereo synthesized score and sound effects use the same fixed event times.
 
-## Ordered tasks
-1. Inspect skills/tooling; validate finance and easing/morph functions with node tests. Acceptance: exact totals and 1200 finite deterministic frame states.
-2. Build salary→receipt→timeline prototype. Acceptance: five designed style poses, readable type, 300-frame prototype rendered and inspected before full-film render.
-3. Build expenses→balance→silence→folded final panel. Acceptance: every settled balance exact, all handoffs share geometry, final title has a comfortable hold.
-4. Synthesize 48 kHz score/SFX keyed to shared event times. Acceptance: silence window, measured loudness near -14 LUFS and true peak ≤ -1 dBTP.
-5. Capture full contact sheet, test seeking out of order, inspect paths/type/fonts/browser errors. Acceptance: no detected invalid paths, missing fonts or overflow at hold poses.
-6. Render 1200-frame master, preview and social. Verify ffprobe metadata, full decode, frame count, clipping and nonblank samples; produce short honest production report.
+## Ordered tasks and acceptance
+1. Foundation: test deterministic states, screen mapping, continuity and contacts; open Studio. Verify node tests and browser readiness.
+2. First seven seconds: art-direct studio/monitor/UI; extrude folder and land with one bounce. Capture and inspect normal/emerge/impact style frames. Render and decode exactly 420 prototype frames before full production.
+3. Remaining motion: browser peel, eleven readable notification cards, controlled stacking/sliding and folder nudge, DELETE suction and restoration. Verify sampled/full-frame finite transforms and random-access pixel identity.
+4. Sound: synthesize 48 kHz stems and mix. Verify duration, synchronization event schedule, approximately -14 LUFS integrated and <= -1 dBTP.
+5. Quality: inspect seven-beat contact sheet, monitor registration, shadows, UV continuity, collisions, readable safe titles, final calm gag and loop composition. Check source types and browser errors.
+6. Delivery: capture exactly 1500 frames, H.264/AAC 1080x1920 60fps 25s; FFprobe, full decode and actual video playback. Deliver source, audio/license notes and an evidence-based QC report.
 
 ## Checkpoints
-- Arithmetic tests before visual implementation.
-- Style frames and five-second prototype before full export.
-- Contact-sheet inspection and source checks before master.
-- Metadata and decode verification after delivery encodes.
+- Tests before timeline implementation.
+- Folder visual review and verified seven-second prototype before full export.
+- Full contact sheet before master render.
+- Exact metadata, decode, deterministic seeking, loudness and playback before claiming completion.
 
 ## Constraints
-- No network font dependence; no nondeterministic physics or CSS animation.
-- The silence beat intentionally uses very small balance typography.
-- sRGB-authored graphics convert to tagged BT.709 YUV for conventional H.264 delivery; disclose this distinction.
-- Automated tests support, not replace, visual inspection; report limitations honestly.
+No remote fonts, assets or unseeded randomness. No edits to earlier films. Browser peel is a deterministic flexible-sheet mesh approximation rather than cloth simulation. Contact shadows use real shadow mapping plus analytic soft contact patches. No hard cuts in the continuous camera route.
